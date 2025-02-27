@@ -1,29 +1,13 @@
-# project2-sec-1-goosebomb
+# PROJECT2-SEC-1-GooseBomb
 
-This template should help get you started developing with Vue 3 in Vite.
+## รายชื่อสมาชิก
 
-## Recommended IDE Setup
+| ลำดับ | รหัสนักศึกษา   | ชื่อ-นามสกุล                 | GitHub Username |
+|-------|-----------------|---------------------|-----------------|
+| 1     | 66130500018     | ชนันธร ศรีวรชัย         |   mook2005      |
+| 2     | 66130500021     | ชัญญา นิ่มถาวร         |    CNProud       |
+| 3     | 66130500034     | ทนิน เก้าเอี้ยน          |    TaninGit      |
+| 4     | 66130500054     | เบญญาพร เมธาวิวรรธน์กุล  |    Benyaporn54   |
+| 5     | 66130500061     | ปัณณพร อโนทัยสินทวี     |    Butt3rPann    |
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+--------------
