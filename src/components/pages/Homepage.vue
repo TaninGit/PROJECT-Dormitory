@@ -1,8 +1,8 @@
 <script setup>
 import Banner from '../homepage/Banner.vue'
 import Reason from '../homepage/Reason.vue'
-import Footers from "../homepage/Footer.vue"
 import Announcement from "../homepage/Announcement.vue"
+import Room from '../homepage/Room.vue'
 import Review from '../homepage/Review.vue'
 </script>
  
@@ -11,9 +11,9 @@ import Review from '../homepage/Review.vue'
 <div>
     <Banner></Banner>
     <Announcement/>
+    <Room/>
     <Reason/>
     <!-- <Review/> -->
-    <Footers/>
 </div>
     
 </template>
