@@ -1,8 +1,6 @@
 <script setup>
 import ReviewCard from './ReviewCard.vue'
-import reviews from '../../data/reviews.json'
-
-console.log(reviews.length);
+import reviews from '../../../data/reviews.json'
 
 </script>
  
