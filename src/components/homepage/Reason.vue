@@ -1,11 +1,11 @@
 <script setup>
-import reasons from '../../data/reason.json'
+import reasons from '../../../data/reason.json'
 </script>
  
 <template>
 <div>
     <div class="flex items-center justify-center p-15">
-      <img src="../assets/images/reasonImage.png" class="h-96 w-lg">
+      <img src="../../assets/images/reasonImage.png" class="h-96 w-lg">
       <div class="pl-15">
         <div>
           <h1 class="font-noto-sans-thai text-[#1E555C] font-bold text-5xl p-3">ทำไมต้องเลือกเรา?</h1>
@@ -20,7 +20,7 @@ import reasons from '../../data/reason.json'
         </p>
 
         <div v-for="(reason, index) in reasons" :key="index" class="font-noto-sans-thai text-[#404546] text-xl flex mt-1 ml-5">
-          <img src="../assets/images/gooseBullet.png" alt="" class="w-[24px] h-[24px]">
+          <img src="../../assets/images/gooseBullet.png" alt="" class="w-[24px] h-[24px]">
           <p class="ml-2">{{ reason }}</p>
         </div>
       </div>
