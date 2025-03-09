@@ -2,24 +2,36 @@
 
 ## รายชื่อสมาชิก
 
-| ลำดับ | รหัสนักศึกษา   | ชื่อ-นามสกุล                 | GitHub Username | สัดส่วนเปอร์เซ็นต์การทำงาน |     สัปดาห์ที่ 1     |     สัปดาห์ที่ 2   |    สัปดาห์ที่ 3    |    สัปดาห์ที่ 4    |
-|-------|-----------------|---------------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
-| 1     | 66130500018     | ชนันธร ศรีวรชัย         |   mook2005      | |    Figma Design  | Component Structure , Navbar.vue, Room.vue, Roomtype.vue |
-| 2     | 66130500021     | ชัญญา นิ่มถาวร         |    CNProud       | |    Figma Design  | Component Structure , Banner.vue, Reason.vue |
-| 3     | 66130500034     | ทนิน เก้าเอี้ยน          |    TaninGit      | |    Figma Design  | Component Structure , Slider.vue |
-| 4     | 66130500054     | เบญญาพร เมธาวิวรรธน์กุล  |    Benyaporn54   | |  Design System, Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue |
-| 5     | 66130500061     | ปัณณพร อโนทัยสินทวี     |    Butt3rPann    | |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue |
+| ลำดับ | รหัสนักศึกษา   | ชื่อ-นามสกุล                 | GitHub Username | สัดส่วนเปอร์เซ็นต์การทำงาน |
+|-------|-----------------|---------------------|-----------------|-----------------|
+| 1     | 66130500018     | ชนันธร ศรีวรชัย         |   mook2005      | |
+| 2     | 66130500021     | ชัญญา นิ่มถาวร         |    CNProud       | |
+| 3     | 66130500034     | ทนิน เก้าเอี้ยน          |    TaninGit      | |
+| 4     | 66130500054     | เบญญาพร เมธาวิวรรธน์กุล  |    Benyaporn54   | |
+| 5     | 66130500061     | ปัณณพร อโนทัยสินทวี     |    Butt3rPann    | |
+
+-------------
+
+## Weekly Progess
+
+| ลำดับ | รหัสนักศึกษา   |      สัปดาห์ที่ 1     |     สัปดาห์ที่ 2   |    สัปดาห์ที่ 3    |    สัปดาห์ที่ 4    |
+|------|--------------|-----------------|-----------------|-----------------|-----------------|
+| 1     | 66130500018     |    Figma Design  | Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue |
+| 2     | 66130500021     |    Design System, Figma Design  | Component Structure , Banner.vue, Reason.vue |
+| 3     | 66130500034     |    Figma Design  | Component Structure , Slider.vue (next, prev, imageSlider function)|
+| 4     | 66130500054     |    Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue |
+| 5     | 66130500061     |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue |
 
 --------------
 
 
 # การแบ่งงาน (In Process)
 
-✅ **018** - Figma Design, Component Structure , Navbar.vue, Room.vue, Roomtype.vue
+✅ **018** - Figma Design, Component Structure , Navbar.vue (setUnderline function, resetUnderline function, openDropdown function, closeDropdown function), Room.vue, Roomtype.vue
 
 ✅ **021** - Design System , Figma Design, Component Structure , Banner.vue, Reason.vue
 
-✅ **034** - Figma Design, Component Structure , Slider.vue
+✅ **034** - Figma Design, Component Structure , Slider.vue (next function, prev function, imageSlider function)
 
 ✅ **054** - Figma Design, Component Structure , Announcement.vue, News.vue, Footer.vue
 
