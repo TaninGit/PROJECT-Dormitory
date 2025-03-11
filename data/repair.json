@@ -1,0 +1,225 @@
+[
+    {
+      "studentId": "66130500018",
+      "reports": [
+        {
+          "repairId": "R001",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "10 มีนาคม 2568",
+          "title": "ไฟไม่ติด",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "12/03/2568"
+        },
+        {
+          "repairId": "R002",
+          "repairType": "งานประปา",
+          "reportTime": "15 กุมภาพันธ์ 2568",
+          "title": "น้ำรั่ว",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "20/02/2568"
+        },
+        {
+          "repairId": "R003",
+          "repairType": "อื่นๆ",
+          "reportTime": "5 พฤศจิกายน 2567",
+          "title": "โต๊ะหัก",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "08/11/2567"
+        }
+      ]
+    },
+    {
+      "studentId": "66130500021",
+      "reports": [
+        {
+          "repairId": "R004",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "08 มีนาคม 2568",
+          "title": "แอร์ไม่เย็น",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "10/03/2568"
+        },
+        {
+          "repairId": "R005",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "03 มีนาคม 2568",
+          "title": "พัดลมพัง",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "06/03/2568"
+        },
+        {
+          "repairId": "R006",
+          "repairType": "อื่นๆ",
+          "reportTime": "10 ธันวาคม 2567",
+          "title": "ประตูล็อกเสีย",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "15/12/2567"
+        }
+      ]
+    },
+    {
+      "studentId": "66130500034",
+      "reports": [
+        {
+          "repairId": "R007",
+          "repairType": "อื่นๆ",
+          "reportTime": "20 กุมภาพันธ์ 2568",
+          "title": "WiFi หลุดบ่อย",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "25/02/2568"
+        },
+        {
+          "repairId": "R008",
+          "repairType": "งานประปา",
+          "reportTime": "05 ตุลาคม 2567",
+          "title": "น้ำไม่ไหล",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "10/10/2567"
+        }
+      ]
+    },
+    {
+      "studentId": "66130500054",
+      "reports": [
+        {
+          "repairId": "R009",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "09 มีนาคม 2568",
+          "title": "ปลั๊กไฟเสีย",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "11/03/2568"
+        },
+        {
+          "repairId": "R010",
+          "repairType": "อื่นๆ",
+          "reportTime": "05 มีนาคม 2568",
+          "title": "หน้าต่างแตก",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "07/03/2568"
+        },
+        {
+          "repairId": "R011",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "25 มกราคม 2568",
+          "title": "ทีวีเปิดไม่ติด",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "28/01/2568"
+        },
+        {
+          "repairId": "R012",
+          "repairType": "อื่นๆ",
+          "reportTime": "20 มกราคม 2568",
+          "title": "เก้าอี้หัก",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "22/01/2568"
+        },
+        {
+          "repairId": "R013",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "03 มีนาคม 2567",
+          "title": "เครื่องซักผ้าไม่ทำงาน",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "06/03/2567"
+        },
+        {
+          "repairId": "R014",
+          "repairType": "อื่นๆ",
+          "reportTime": "03 มีนาคม 2568",
+          "title": "ไม่มีสัญญาณ",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "05/03/2568"
+        },
+        {
+          "repairId": "R015",
+          "repairType": "งานประปา",
+          "reportTime": "12 กรกฎาคม 2567",
+          "title": "น้ำไหลไม่แรง",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "15/07/2567"
+        },
+        {
+          "repairId": "R016",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "9 ธันวาคม 2567",
+          "title": "เตาไฟฟ้าเสีย",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "11/12/2567"
+        }
+      ]
+    },
+    {
+      "studentId": "66130500061",
+      "reports": [
+        {
+          "repairId": "R017",
+          "repairType": "อื่นๆ",
+          "reportTime": "20 สิงหาคม 2567",
+          "title": "โต๊ะขาหัก",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "21/08/2567"
+        },
+        {
+          "repairId": "R018",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "31 สิงหาคม 2567",
+          "title": "ไมโครเวฟไม่ร้อน",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "02/09/2567"
+        },
+        {
+          "repairId": "R019",
+          "repairType": "อื่นๆ",
+          "reportTime": "19 กันยายน 2567",
+          "title": "ลูกบิดประตูหลุด",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "22/09/2567"
+        },
+        {
+          "repairId": "R020",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "9 มีนาคม 2568",
+          "title": "ไฟดับ",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "09/03/2568"
+        },
+        {
+          "repairId": "R021",
+          "repairType": "อื่นๆ",
+          "reportTime": "17 กุมภาพันธ์ 2568",
+          "title": "WiFi ช้า",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "17/02/2568"
+        },
+        {
+          "repairId": "R022",
+          "repairType": "งานประปา",
+          "reportTime": "2 มีนาคม 2568",
+          "title": "น้ำขุ่น",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "03/03/2568"
+        }
+      ]
+    }
+]
