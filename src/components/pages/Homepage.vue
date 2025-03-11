@@ -15,7 +15,7 @@ import Review from '../homepage/Review.vue'
     <Announcement/>
     <Room/>
     <Reason/>
-    <!-- <Review/> -->
+    <Review/>
 </div>
     
 </template>
