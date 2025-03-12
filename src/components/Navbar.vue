@@ -55,21 +55,16 @@ const closeDropdown = () => {
     </a>
 
     <div class="relative">
-      <ul class="hidden md:flex space-x-8 relative">
-        <li
-          v-for="(item, index) in [
-            'หน้าหลัก',
-            'เกี่ยวกับเรา',
-            'ข่าวประชาสัมพันธ์',
-          ]"
-          :key="index"
-          class="relative cursor-pointer"
-          @mouseenter="setUnderline"
-          @mouseleave="resetUnderline"
-        >
-          <a href="#" class="relative pb-2">{{ item }}</a>
+      <ul class="hidden md:flex space-x-8 relative cursor-pointer">
+        <li @mouseenter="setUnderline" @mouseleave="resetUnderline">
+          หน้าหลัก
         </li>
-
+        <li @mouseenter="setUnderline" @mouseleave="resetUnderline">
+          เกี่ยวกับเรา
+        </li>
+        <li @mouseenter="setUnderline" @mouseleave="resetUnderline">
+          ข่าวประชาสัมพันธ์
+        </li>
         <li
           class="relative"
           @mouseenter="openDropdown"
@@ -129,8 +124,8 @@ const closeDropdown = () => {
 
     <a class="text-2xl cursor-pointer">
       <svg
-        width="70"
-        height="70"
+        width="45"
+        height="45"
         viewBox="0 0 90 90"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
