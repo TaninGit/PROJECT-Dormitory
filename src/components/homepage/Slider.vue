@@ -1,5 +1,5 @@
 <script setup>
-import sliders from '/data/slider.json';
+// import sliders from '/data/slider.json';
 import { ref, onMounted } from 'vue';
 
 const imageIndex = ref(0);
