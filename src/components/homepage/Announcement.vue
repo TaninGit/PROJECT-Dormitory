@@ -1,6 +1,6 @@
 <script setup>
 import news from "./News.vue";
-import newsList from "../../../data/news.json"
+// import newsList from "../../../data/news.json"
 </script>
 
 <template>
