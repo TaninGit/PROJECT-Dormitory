@@ -286,15 +286,28 @@
             "img": "reviewImageMix.png"
         }
     ],
-    "sliders" : [
-        "src/assets/images/banner1-img.png",
-        "src/assets/images/banner2-img.png",
-        "src/assets/images/banner3-img.png",
-        "src/assets/images/banner4-img.png"
-    ],
+"sliders": [
+    {
+        "ID": 1,
+        "img": "/src/assets/images/banner1-img.png"
+    },
+    {
+        "ID": 2,
+        "img": "/src/assets/images/banner2-img.png"
+    },
+    {
+        "ID": 3,
+        "img": "/src/assets/images/banner3-img.png"
+    },
+    {
+        "ID": 4,
+        "img": "/src/assets/images/banner4-img.png"
+    }
+    ]
+    ,
     "users" : [
         {
-            "studentID": 66130500018,
+            "studentID": "66130500018",
             "password": "xxx",
             "firstName": "Chananthorn",
             "lastName": "Srivorachai",
@@ -307,7 +320,7 @@
             "roomType": "2 คน ปรับอากาศ ห้องน้ำในตัว"
         },
         {
-            "studentID": 66130500021,
+            "studentID": "66130500021",
             "password": "xxx",
             "firstName": "Chanya",
             "lastName": "Nimtavorn",
@@ -320,7 +333,7 @@
             "roomType": "2 คน ปรับอากาศ ห้องน้ำรวม"
         },
         {
-            "studentID": 66130500034,
+            "studentID": "66130500034",
             "password": "xxx",
             "firstName": "Tanin",
             "lastName": "Kaoaian",
@@ -333,7 +346,7 @@
             "roomType": "2 คน พัดลม ห้องน้ำในตัว"
         },
         {
-            "studentID": 66130500054,
+            "studentID": "66130500054",
             "password": "xxx",
             "firstName": "Benyaporn",
             "lastName": "Maethawiwatkul",
@@ -346,7 +359,7 @@
             "roomType": "2 คน พัดลม ห้องน้ำรวม"
         },
         {
-            "studentID": 66130500061,
+            "studentID": "66130500061",
             "password": "xxx",
             "firstName": "Pannaporn",
             "lastName": "Anothaisinthavee",
