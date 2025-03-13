@@ -1,5 +1,5 @@
 <script setup>
-import reasons from '../../../data/reason.json'
+import reasons from '../../../data/db.json'
 </script>
  
 <template>
