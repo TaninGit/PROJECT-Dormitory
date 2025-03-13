@@ -1,6 +1,6 @@
 <script setup>
 import ReviewCard from './ReviewCard.vue'
-import reviews from '../../../data/reviews.json'
+// import reviews from '../../../data/review.json'
 import { ref } from "vue"
 
 const selected = ref(3)
