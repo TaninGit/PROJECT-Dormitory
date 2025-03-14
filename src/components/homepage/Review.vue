@@ -1,14 +1,23 @@
 <script setup>
+import { onMounted, ref } from "vue"
+import { getItems } from '../../libs/fetchUtils.js'
 import ReviewCard from './ReviewCard.vue'
-// import reviews from '../../../data/review.json'
-import { ref } from "vue"
 
+const reviews = ref([])
 const selected = ref(3)
 const translate = ref(0)
 
+onMounted(async () => {
+    try {
+        reviews.value = await getItems(`${import.meta.env.VITE_APP_URL}/reviews`)
+    } catch (error) {
+        console.log(error);
+    }
+})
+
 const prevReview = () => {
     if (selected.value === 1) {
-        selected.value = reviews.length
+        selected.value = reviews.value.length
         translate.value = (3 - selected.value) * 20
         return
     }
@@ -17,7 +26,7 @@ const prevReview = () => {
 }
 
 const nextReview = () => {
-    if (selected.value === reviews.length) {
+    if (selected.value === reviews.value.length) {
         selected.value = 1
         translate.value = (3 - selected.value) * 20
         return
@@ -52,10 +61,10 @@ const selectReview = (index) => {
             <div class="overflow-hidden w-screen flex justify-center max-w-[59rem]">
                 <div class="flex flex-row items-center duration-1000"
                     :style="`translate: ${translate}rem`">
-                    <div v-for="(review, index) in reviews" :key="index" :id="`review${review.ID}`">
-                        <ReviewCard :id="review.ID" :selected="selected">
+                    <div v-for="(review, index) in reviews" :key="index" :id="`review${review.id}`">
+                        <ReviewCard :id="review.id" :selected="selected">
                             <template #image>
-                                <img :src="`./reviewImages/${review.img}`" alt="รูปผู้รีวิว" class="">
+                                <img :src="`./reviewImages/${review.img}`" alt="รูปผู้รีวิว">
                             </template>
                             <template #name>
                                 {{ review.name }}
