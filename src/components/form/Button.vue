@@ -13,7 +13,7 @@ const isHovered = ref(false);
 <template>
 <div>
     <div>
-        <button 
+        <button
         :style="{ backgroundColor: isHovered ? hover : backgroundColor }"
         class="font-noto-sans-thai font-bold text-white w-88 h-14 rounded-3xl text-[22px]"
         @mouseover="isHovered = true"
