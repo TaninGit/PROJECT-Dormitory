@@ -10,8 +10,10 @@ import RepairList from "./components/repair/RepairList.vue";
 
 <template>
     <Navbar />
-    <RepairList></RepairList>
+    <Homepage></Homepage>
+    <!-- <RepairList></RepairList> -->
     <!-- <UpdateRepairForm></UpdateRepairForm> -->
+    <!-- <AddRepairForm></AddRepairForm> -->
     <Footer></Footer>
 </template>
 

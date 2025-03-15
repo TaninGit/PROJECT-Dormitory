@@ -289,19 +289,19 @@
   "sliders": [
     {
       "id": 1,
-      "img": "/src/assets/images/banner1-img.png"
+      "img": "./banners/banner1-img.png"
     },
     {
       "id": 2,
-      "img": "/src/assets/images/banner2-img.png"
+      "img": "./banners/banner2-img.png"
     },
     {
       "id": 3,
-      "img": "/src/assets/images/banner3-img.png"
+      "img": "./banners/banner3-img.png"
     },
     {
       "id": 4,
-      "img": "/src/assets/images/banner4-img.png"
+      "img": "./banners/banner4-img.png"
     }
   ],
   "users": [
