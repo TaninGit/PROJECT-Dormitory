@@ -246,7 +246,7 @@
   ],
   "reviews": [
     {
-      "id": "1",
+      "id": 1,
       "name": "น้ำฝน",
       "faculty": "วิศวกรรมศาสตร์",
       "batch": 65,
@@ -254,7 +254,7 @@
       "img": "reviewImageNamfon.png"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "โจ้",
       "faculty": "บริหารธุรกิจ",
       "batch": 66,
@@ -262,7 +262,7 @@
       "img": "reviewImageJoe.png"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "สกาย",
       "faculty": "วิทยาศาสตร์",
       "batch": 63,
@@ -270,7 +270,7 @@
       "img": "reviewImageSky.png"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "เบลล์",
       "faculty": "มนุษยศาสตร์",
       "batch": 64,
@@ -278,7 +278,7 @@
       "img": "reviewImageBell.png"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "มิกซ์",
       "faculty": "สถาปัตยกรรมศาสตร์",
       "batch": 60,
@@ -288,19 +288,19 @@
   ],
   "sliders": [
     {
-      "id": "1",
+      "id": 1,
       "img": "/src/assets/images/banner1-img.png"
     },
     {
-      "id": "2",
+      "id": 2,
       "img": "/src/assets/images/banner2-img.png"
     },
     {
-      "id": "3",
+      "id": 3,
       "img": "/src/assets/images/banner3-img.png"
     },
     {
-      "id": "4",
+      "id": 4,
       "img": "/src/assets/images/banner4-img.png"
     }
   ],
