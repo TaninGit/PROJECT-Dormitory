@@ -246,71 +246,62 @@
   ],
   "reviews": [
     {
-      "ID": 1,
+      "id": 1,
       "name": "น้ำฝน",
       "faculty": "วิศวกรรมศาสตร์",
       "batch": 65,
       "reviewText": "หอพักดีมากค่ะ อยู่ใกล้มหา'ลัยสุดๆ ตื่นสายก็ยังไปทันเข้าเรียน 555 Wi-Fi แรงใช้ได้เลย นั่งทำโปรเจกต์ดึกๆ ก็สบาย ห้องสะอาด คุณป้าที่ดูแลหอใจดีมาก แนะนำเลยค่า",
-      "img": "reviewImageNamfon.png",
-      "id": "0f26"
+      "img": "reviewImageNamfon.png"
     },
     {
-      "ID": 2,
+      "id": 2,
       "name": "โจ้",
       "faculty": "บริหารธุรกิจ",
       "batch": 66,
       "reviewText": "หอพักคือสะอาดมากกกกกกก ที่สำคัญคือมี Co-working Space ให้ใช้ ทำให้ไม่ต้องไปนั่งอ่านหนังสือข้างนอก ห้องเงียบไม่ค่อยมีเสียงรบกวน นอนหลับสบาย",
-      "img": "reviewImageJoe.png",
-      "id": "a33a"
+      "img": "reviewImageJoe.png"
     },
     {
-      "ID": 3,
+      "id": 3,
       "name": "สกาย",
       "faculty": "วิทยาศาสตร์",
       "batch": 63,
       "reviewText": "หอพักคือเงียบสงบมาก เหมาะกับการอ่านหนังสือสุดๆ มีพี่รปภ.ดูแลตลอด 24 ชม. ปลอดภัยมาก ที่สำคัญคือห้องน้ำสะอาดสุดๆ มีน้ำอุ่นตลอด ไม่เคยมีปัญหาน้ำไม่ไหลเลยครับ",
-      "img": "reviewImageSky.png",
-      "id": "c07f"
+      "img": "reviewImageSky.png"
     },
     {
-      "ID": 4,
+      "id": 4,
       "name": "เบลล์",
       "faculty": "มนุษยศาสตร์",
       "batch": 64,
       "reviewText": "ชอบหอมากเลยค่ะ ห้องสวย น่ารัก ตกแต่งสไตล์มินิมอล มีระเบียงให้นั่งรับลมตอนเย็นๆ ฟีลดีมาก พี่ๆ ที่ดูแลหอก็น่ารัก เป็นกันเอง มีปัญหาอะไรแจ้งได้ตลอดเลยค่ะ",
-      "img": "reviewImageBell.png",
-      "id": "1014"
+      "img": "reviewImageBell.png"
     },
     {
-      "ID": 5,
+      "id": 5,
       "name": "มิกซ์",
       "faculty": "สถาปัตยกรรมศาสตร์",
       "batch": 60,
       "reviewText": "หอพักมีจัดกิจกรรมบ่อย ทั้งงานเลี้ยงต้อนรับน้องใหม่ กิจกรรมจับฉลากปีใหม่ คือทำให้ได้เจอเพื่อนเยอะขึ้น ไม่ต้องอยู่แบบเหงาๆ ห้องพักก็โอเคเลย มีเฟอร์ครบ อยู่สบาย ใกล้มหา'ลัยด้วย แฮปปี้มากครับ",
-      "img": "reviewImageMix.png",
-      "id": "a3c3"
+      "img": "reviewImageMix.png"
     }
   ],
   "sliders": [
     {
-      "ID": 1,
-      "img": "/src/assets/images/banner1-img.png",
-      "id": "4045"
+      "id": 1,
+      "img": "/src/assets/images/banner1-img.png"
     },
     {
-      "ID": 2,
-      "img": "/src/assets/images/banner2-img.png",
-      "id": "e804"
+      "id": 2,
+      "img": "/src/assets/images/banner2-img.png"
     },
     {
-      "ID": 3,
-      "img": "/src/assets/images/banner3-img.png",
-      "id": "2bd1"
+      "id": 3,
+      "img": "/src/assets/images/banner3-img.png"
     },
     {
-      "ID": 4,
-      "img": "/src/assets/images/banner4-img.png",
-      "id": "69f5"
+      "id": 4,
+      "img": "/src/assets/images/banner4-img.png"
     }
   ],
   "users": [
