@@ -1,378 +1,374 @@
 {
-    "news" : {
-        "news1" : {
-            "img" : "/src/assets/images/news1.png",
-            "header": "เปิดตลาดนัดนักศึกษา! ช้อปง่าย ของกินเพียบ",
-            "desc" : "ตลาดนัดหอพักกลับมาแล้ว! พบกับอาหารอร่อย เสื้อผ้า ของใช้ราคานักศึกษา ทุกวันอังคาร ที่ลานกิจกรรม",
-            "date" : "24 กรกฎาคม 2568"
-        },
-        "news2" : {
-            "img" : "/src/assets/images/news2.png",
-            "header": "อิ่มบุญ อิ่มใจ เช้าวันใหม่ด้วยการตักบาตร",
-            "desc" : "เชิญชวนทุกคนร่วมใส่บาตรพระสงฆ์ ณ บริเวณหน้าหอพัก ในวันศุกร์ที่ 15 กรกฏาคม 2568 เวลา 07:00 น.",
-            "date" : "1 กรกฎาคม 2568"
-        },
-        "news3" : {
-            "img" : "/src/assets/images/news3.png",
-            "header": "ซ้อมหนีไฟประจำปี นักศึกษาทุกคนต้องเข้าร่วม!",
-            "desc" : "เสียงเตือนดังขึ้น ต้องทำอย่างไร? มาเรียนรู้กัน!",
-            "date" : "1 กรกฎาคม 2568"
-        }
+  "news": {
+    "news1": {
+      "img": "/src/assets/images/news1.png",
+      "header": "เปิดตลาดนัดนักศึกษา! ช้อปง่าย ของกินเพียบ",
+      "desc": "ตลาดนัดหอพักกลับมาแล้ว! พบกับอาหารอร่อย เสื้อผ้า ของใช้ราคานักศึกษา ทุกวันอังคาร ที่ลานกิจกรรม",
+      "date": "24 กรกฎาคม 2568"
     },
-    "repairs" : [
+    "news2": {
+      "img": "/src/assets/images/news2.png",
+      "header": "อิ่มบุญ อิ่มใจ เช้าวันใหม่ด้วยการตักบาตร",
+      "desc": "เชิญชวนทุกคนร่วมใส่บาตรพระสงฆ์ ณ บริเวณหน้าหอพัก ในวันศุกร์ที่ 15 กรกฏาคม 2568 เวลา 07:00 น.",
+      "date": "1 กรกฎาคม 2568"
+    },
+    "news3": {
+      "img": "/src/assets/images/news3.png",
+      "header": "ซ้อมหนีไฟประจำปี นักศึกษาทุกคนต้องเข้าร่วม!",
+      "desc": "เสียงเตือนดังขึ้น ต้องทำอย่างไร? มาเรียนรู้กัน!",
+      "date": "1 กรกฎาคม 2568"
+    }
+  },
+  "repairs": [
+    {
+      "id": "66130500018",
+      "reports": [
         {
-          "id": "66130500018",
-          "reports": [
-            {
-              "repairId": "R001",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "10 มีนาคม 2568",
-              "title": "ไฟไม่ติด",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "10:00-11:00",
-              "appointmentDate": "12/03/2568"
-            },
-            {
-              "repairId": "R002",
-              "repairType": "งานประปา",
-              "reportTime": "15 กุมภาพันธ์ 2568",
-              "title": "น้ำรั่ว",
-              "status": "กำลังดำเนินการ",
-              "appointmentTime": "13:00-14:00",
-              "appointmentDate": "20/02/2568"
-            },
-            {
-              "repairId": "R003",
-              "repairType": "อื่นๆ",
-              "reportTime": "5 พฤศจิกายน 2567",
-              "title": "โต๊ะหัก",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "15:00-16:00",
-              "appointmentDate": "08/11/2567"
-            }
-          ]
+          "repairId": "R001",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-10",
+          "title": "ไฟไม่ติด",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2025-03-12"
         },
         {
-          "id": "66130500021",
-          "reports": [
-            {
-              "repairId": "R004",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "08 มีนาคม 2568",
-              "title": "แอร์ไม่เย็น",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "09:00-10:00",
-              "appointmentDate": "10/03/2568"
-            },
-            {
-              "repairId": "R005",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "03 มีนาคม 2568",
-              "title": "พัดลมพัง",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "10:00-11:00",
-              "appointmentDate": "06/03/2568"
-            },
-            {
-              "repairId": "R006",
-              "repairType": "อื่นๆ",
-              "reportTime": "10 ธันวาคม 2567",
-              "title": "ประตูล็อกเสีย",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "14:00-15:00",
-              "appointmentDate": "15/12/2567"
-            }
-          ]
+          "repairId": "R002",
+          "repairType": "งานประปา",
+          "reportTime": "2025-02-15",
+          "title": "น้ำรั่ว",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "2025-02-20"
         },
         {
-          "id": "66130500034",
-          "reports": [
-            {
-              "repairId": "R007",
-              "repairType": "อื่นๆ",
-              "reportTime": "20 กุมภาพันธ์ 2568",
-              "title": "WiFi หลุดบ่อย",
-              "status": "กำลังดำเนินการ",
-              "appointmentTime": "13:00-14:00",
-              "appointmentDate": "25/02/2568"
-            },
-            {
-              "repairId": "R008",
-              "repairType": "งานประปา",
-              "reportTime": "05 ตุลาคม 2567",
-              "title": "น้ำไม่ไหล",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "15:00-16:00",
-              "appointmentDate": "10/10/2567"
-            }
-          ]
-        },
-        {
-          "id": "66130500054",
-          "reports": [
-            {
-              "repairId": "R009",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "09 มีนาคม 2568",
-              "title": "ปลั๊กไฟเสีย",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "09:00-10:00",
-              "appointmentDate": "11/03/2568"
-            },
-            {
-              "repairId": "R010",
-              "repairType": "อื่นๆ",
-              "reportTime": "05 มีนาคม 2568",
-              "title": "หน้าต่างแตก",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "10:00-11:00",
-              "appointmentDate": "07/03/2568"
-            },
-            {
-              "repairId": "R011",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "25 มกราคม 2568",
-              "title": "ทีวีเปิดไม่ติด",
-              "status": "รอดำเนินการ",
-              "appointmentTime": "13:00-14:00",
-              "appointmentDate": "28/01/2568"
-            },
-            {
-              "repairId": "R012",
-              "repairType": "อื่นๆ",
-              "reportTime": "20 มกราคม 2568",
-              "title": "เก้าอี้หัก",
-              "status": "กำลังดำเนินการ",
-              "appointmentTime": "14:00-15:00",
-              "appointmentDate": "22/01/2568"
-            },
-            {
-              "repairId": "R013",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "03 มีนาคม 2567",
-              "title": "เครื่องซักผ้าไม่ทำงาน",
-              "status": "กำลังดำเนินการ",
-              "appointmentTime": "15:00-16:00",
-              "appointmentDate": "06/03/2567"
-            },
-            {
-              "repairId": "R014",
-              "repairType": "อื่นๆ",
-              "reportTime": "03 มีนาคม 2568",
-              "title": "ไม่มีสัญญาณ",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "09:00-10:00",
-              "appointmentDate": "05/03/2568"
-            },
-            {
-              "repairId": "R015",
-              "repairType": "งานประปา",
-              "reportTime": "12 กรกฎาคม 2567",
-              "title": "น้ำไหลไม่แรง",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "14:00-15:00",
-              "appointmentDate": "15/07/2567"
-            },
-            {
-              "repairId": "R016",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "9 ธันวาคม 2567",
-              "title": "เตาไฟฟ้าเสีย",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "10:00-11:00",
-              "appointmentDate": "11/12/2567"
-            }
-          ]
-        },
-        {
-          "id": "66130500061",
-          "reports": [
-            {
-              "repairId": "R017",
-              "repairType": "อื่นๆ",
-              "reportTime": "20 สิงหาคม 2567",
-              "title": "โต๊ะขาหัก",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "14:00-15:00",
-              "appointmentDate": "21/08/2567"
-            },
-            {
-              "repairId": "R018",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "31 สิงหาคม 2567",
-              "title": "ไมโครเวฟไม่ร้อน",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "09:00-10:00",
-              "appointmentDate": "02/09/2567"
-            },
-            {
-              "repairId": "R019",
-              "repairType": "อื่นๆ",
-              "reportTime": "19 กันยายน 2567",
-              "title": "ลูกบิดประตูหลุด",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "15:00-16:00",
-              "appointmentDate": "22/09/2567"
-            },
-            {
-              "repairId": "R020",
-              "repairType": "งานไฟฟ้า",
-              "reportTime": "9 มีนาคม 2568",
-              "title": "ไฟดับ",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "15:00-16:00",
-              "appointmentDate": "09/03/2568"
-            },
-            {
-              "repairId": "R021",
-              "repairType": "อื่นๆ",
-              "reportTime": "17 กุมภาพันธ์ 2568",
-              "title": "WiFi ช้า",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "13:00-14:00",
-              "appointmentDate": "17/02/2568"
-            },
-            {
-              "repairId": "R022",
-              "repairType": "งานประปา",
-              "reportTime": "2 มีนาคม 2568",
-              "title": "น้ำขุ่น",
-              "status": "ดำเนินการเรียบร้อย",
-              "appointmentTime": "10:00-11:00",
-              "appointmentDate": "03/03/2568"
-            }
-          ]
+          "repairId": "R003",
+          "repairType": "อื่นๆ",
+          "reportTime": "2024-11-05",
+          "title": "โต๊ะหัก",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "2024-11-08"
         }
-    ],
-    "reviews" : [
+      ]
+    },
+    {
+      "id": "66130500021",
+      "reports": [
         {
-            "id" : 1,
-            "name": "น้ำฝน",
-            "faculty" : "วิศวกรรมศาสตร์",
-            "batch" : 65,
-            "reviewText" : "หอพักดีมากค่ะ อยู่ใกล้มหา'ลัยสุดๆ ตื่นสายก็ยังไปทันเข้าเรียน 555 Wi-Fi แรงใช้ได้เลย นั่งทำโปรเจกต์ดึกๆ ก็สบาย ห้องสะอาด คุณป้าที่ดูแลหอใจดีมาก แนะนำเลยค่า",
-            "img": "reviewImageNamfon.png"
+          "repairId": "R004",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-08",
+          "title": "แอร์ไม่เย็น",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "2025-03-10"
         },
         {
-            "id" : 2,
-            "name": "โจ้",
-            "faculty" : "บริหารธุรกิจ",
-            "batch" : 66,
-            "reviewText" : "หอพักคือสะอาดมากกกกกกก ที่สำคัญคือมี Co-working Space ให้ใช้ ทำให้ไม่ต้องไปนั่งอ่านหนังสือข้างนอก ห้องเงียบไม่ค่อยมีเสียงรบกวน นอนหลับสบาย",
-            "img": "reviewImageJoe.png"
+          "repairId": "R005",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-03",
+          "title": "พัดลมพัง",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2025-03-06"
         },
         {
-            "id" : 3,
-            "name": "สกาย",
-            "faculty" : "วิทยาศาสตร์",
-            "batch" : 63,
-            "reviewText" : "หอพักคือเงียบสงบมาก เหมาะกับการอ่านหนังสือสุดๆ มีพี่รปภ.ดูแลตลอด 24 ชม. ปลอดภัยมาก ที่สำคัญคือห้องน้ำสะอาดสุดๆ มีน้ำอุ่นตลอด ไม่เคยมีปัญหาน้ำไม่ไหลเลยครับ",
-            "img": "reviewImageSky.png"
-        },
-        {
-            "id" : 4,
-            "name": "เบลล์",
-            "faculty" : "มนุษยศาสตร์",
-            "batch" : 64,
-            "reviewText" : "ชอบหอมากเลยค่ะ ห้องสวย น่ารัก ตกแต่งสไตล์มินิมอล มีระเบียงให้นั่งรับลมตอนเย็นๆ ฟีลดีมาก พี่ๆ ที่ดูแลหอก็น่ารัก เป็นกันเอง มีปัญหาอะไรแจ้งได้ตลอดเลยค่ะ",
-            "img": "reviewImageBell.png"
-        },
-        {
-            "id" : 5,
-            "name": "มิกซ์",
-            "faculty" : "สถาปัตยกรรมศาสตร์",
-            "batch" : 60,
-            "reviewText" : "หอพักมีจัดกิจกรรมบ่อย ทั้งงานเลี้ยงต้อนรับน้องใหม่ กิจกรรมจับฉลากปีใหม่ คือทำให้ได้เจอเพื่อนเยอะขึ้น ไม่ต้องอยู่แบบเหงาๆ ห้องพักก็โอเคเลย มีเฟอร์ครบ อยู่สบาย ใกล้มหา'ลัยด้วย แฮปปี้มากครับ",
-            "img": "reviewImageMix.png"
+          "repairId": "R006",
+          "repairType": "อื่นๆ",
+          "reportTime": "2024-12-10",
+          "title": "ประตูล็อกเสีย",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "2024-12-15"
         }
-    ],
-    "sliders": [
+      ]
+    },
+    {
+      "id": "66130500034",
+      "reports": [
         {
-          "ID": 1,
-          "img": "/src/assets/images/banner1-img.png",
-          "id": "4045"
+          "repairId": "R007",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-02-20",
+          "title": "WiFi หลุดบ่อย",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "2025-02-25"
         },
         {
-          "ID": 2,
-          "img": "/src/assets/images/banner2-img.png",
-          "id": "e804"
-        },
-        {
-          "ID": 3,
-          "img": "/src/assets/images/banner3-img.png",
-          "id": "2bd1"
-        },
-        {
-          "ID": 4,
-          "img": "/src/assets/images/banner4-img.png",
-          "id": "69f5"
+          "repairId": "R008",
+          "repairType": "งานประปา",
+          "reportTime": "2024-10-05",
+          "title": "น้ำไม่ไหล",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "2024-10-10"
         }
-    ],
-    "users": [
+      ]
+    },
+    {
+      "id": "66130500054",
+      "reports": [
         {
-          "id": "66130500018",
-          "password": "dc1f27d1895aca32efe0b3e473e4f8efdeea4afff9b93963693b4f482faea6bb",
-          "firstName": "Chananthorn",
-          "lastName": "Srivorachai",
-          "gender": "female",
-          "email": "chananthorn.sriv@goosebomb.com",
-          "phone": "098 7654321",
-          "faculty": "เทคโนโลยีสารสนเทศ",
-          "major": "เทคโนโลยีสารสนเทศ",
-          "roomID": "3301",
-          "roomType": "2 คน ปรับอากาศ ห้องน้ำในตัว"
+          "repairId": "R009",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-09",
+          "title": "ปลั๊กไฟเสีย",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "2025-03-11"
         },
         {
-          "id": "66130500021",
-          "password": "03146056a81fcee252940a62f3f63acd8c5caf3fd922e7f8ef34f5222e88e08c",
-          "firstName": "Chanya",
-          "lastName": "Nimtavorn",
-          "gender": "female",
-          "email": "chanya.nimt@goosebomb.com",
-          "phone": "081 9876543",
-          "faculty": "วิศวกรรมศาสตร์",
-          "major": "วิศวกรรมคอมพิวเตอร์",
-          "roomID": "5412",
-          "roomType": "2 คน ปรับอากาศ ห้องน้ำรวม"
+          "repairId": "R010",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-03-05",
+          "title": "หน้าต่างแตก",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2025-03-07"
         },
         {
-          "id": "66130500034",
-          "password": "c3c103468dc5a7cf68ed09007bcd389db4918d235c0f54199f0bf2ace7979550",
-          "firstName": "Tanin",
-          "lastName": "Kaoaian",
-          "gender": "male",
-          "email": "tanin.kaoa@goosebomb.com",
-          "phone": "099 8765432",
-          "faculty": "วิทยาศาสตร์",
-          "major": "วิทยาการคอมพิวเตอร์",
-          "roomID": "2305",
-          "roomType": "2 คน พัดลม ห้องน้ำในตัว"
+          "repairId": "R011",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-01-25",
+          "title": "ทีวีเปิดไม่ติด",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "2025-01-28"
         },
         {
-          "id": "66130500054",
-          "password": "075c7ab83279cdce561e648481f7bb8c5337818a2b2cd8c5b74dcf8344bf0696",
-          "firstName": "Benyaporn",
-          "lastName": "Maethawiwatkul",
-          "gender": "female",
-          "email": "benyaporn.maet@goosebomb.com",
-          "phone": "085 2345678",
-          "faculty": "ครุศาสตร์",
-          "major": "ภาษาไทย",
-          "roomID": "4507",
-          "roomType": "2 คน พัดลม ห้องน้ำรวม"
+          "repairId": "R012",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-01-20",
+          "title": "เก้าอี้หัก",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "2025-01-22"
         },
         {
-          "id": "66130500061",
-          "password": "7d18d400f08165d0416134a2efc6d20bb25a0789a588e01c6ed59cb64c06d11c",
-          "firstName": "Pannaporn",
-          "lastName": "Anothaisinthavee",
-          "gender": "female",
-          "email": "pannaporn.anot@goosebomb.com",
-          "phone": "099 7755331",
-          "faculty": "บริหารธุรกิจ",
-          "major": "บัญชี",
-          "roomID": "4211",
-          "roomType": "3 คน ปรับอากาศ ห้องน้ำรวม"
+          "repairId": "R013",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-03",
+          "title": "เครื่องซักผ้าไม่ทำงาน",
+          "status": "กำลังดำเนินการ",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "2025-03-06"
+        },
+        {
+          "repairId": "R014",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-03-03",
+          "title": "ไม่มีสัญญาณ",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "2025-03-05"
+        },
+        {
+          "repairId": "R015",
+          "repairType": "งานประปา",
+          "reportTime": "2024-07-12",
+          "title": "น้ำไหลไม่แรง",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "2024-07-15"
+        },
+        {
+          "repairId": "R016",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2024-12-09",
+          "title": "เตาไฟฟ้าเสีย",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2024-12-11"
         }
-    ]
+      ]
+    },
+    {
+      "id": "66130500061",
+      "reports": [
+        {
+          "repairId": "R017",
+          "repairType": "อื่นๆ",
+          "reportTime": "2024-08-20",
+          "title": "โต๊ะขาหัก",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "2024-08-21"
+        },
+        {
+          "repairId": "R018",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2024-08-31",
+          "title": "ไมโครเวฟไม่ร้อน",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "09:00-10:00",
+          "appointmentDate": "2024-09-02"
+        },
+        {
+          "repairId": "R019",
+          "repairType": "อื่นๆ",
+          "reportTime": "2024-09-22",
+          "title": "ลูกบิดประตูหลุด",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "2024-09-22"
+        },
+        {
+          "repairId": "R020",
+          "repairType": "งานไฟฟ้า",
+          "reportTime": "2025-03-09",
+          "title": "ไฟดับ",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "15:00-16:00",
+          "appointmentDate": "2025-03-09"
+        },
+        {
+          "repairId": "R021",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-02-17",
+          "title": "WiFi ช้า",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "2025-02-17"
+        },
+        {
+          "repairId": "R022",
+          "repairType": "งานประปา",
+          "reportTime": "2025-03-02",
+          "title": "น้ำขุ่น",
+          "status": "ดำเนินการเรียบร้อย",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2025-03-03"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "น้ำฝน",
+      "faculty": "วิศวกรรมศาสตร์",
+      "batch": 65,
+      "reviewText": "หอพักดีมากค่ะ อยู่ใกล้มหา'ลัยสุดๆ ตื่นสายก็ยังไปทันเข้าเรียน 555 Wi-Fi แรงใช้ได้เลย นั่งทำโปรเจกต์ดึกๆ ก็สบาย ห้องสะอาด คุณป้าที่ดูแลหอใจดีมาก แนะนำเลยค่า",
+      "img": "reviewImageNamfon.png"
+    },
+    {
+      "id": 2,
+      "name": "โจ้",
+      "faculty": "บริหารธุรกิจ",
+      "batch": 66,
+      "reviewText": "หอพักคือสะอาดมากกกกกกก ที่สำคัญคือมี Co-working Space ให้ใช้ ทำให้ไม่ต้องไปนั่งอ่านหนังสือข้างนอก ห้องเงียบไม่ค่อยมีเสียงรบกวน นอนหลับสบาย",
+      "img": "reviewImageJoe.png"
+    },
+    {
+      "id": 3,
+      "name": "สกาย",
+      "faculty": "วิทยาศาสตร์",
+      "batch": 63,
+      "reviewText": "หอพักคือเงียบสงบมาก เหมาะกับการอ่านหนังสือสุดๆ มีพี่รปภ.ดูแลตลอด 24 ชม. ปลอดภัยมาก ที่สำคัญคือห้องน้ำสะอาดสุดๆ มีน้ำอุ่นตลอด ไม่เคยมีปัญหาน้ำไม่ไหลเลยครับ",
+      "img": "reviewImageSky.png"
+    },
+    {
+      "id": 4,
+      "name": "เบลล์",
+      "faculty": "มนุษยศาสตร์",
+      "batch": 64,
+      "reviewText": "ชอบหอมากเลยค่ะ ห้องสวย น่ารัก ตกแต่งสไตล์มินิมอล มีระเบียงให้นั่งรับลมตอนเย็นๆ ฟีลดีมาก พี่ๆ ที่ดูแลหอก็น่ารัก เป็นกันเอง มีปัญหาอะไรแจ้งได้ตลอดเลยค่ะ",
+      "img": "reviewImageBell.png"
+    },
+    {
+      "id": 5,
+      "name": "มิกซ์",
+      "faculty": "สถาปัตยกรรมศาสตร์",
+      "batch": 60,
+      "reviewText": "หอพักมีจัดกิจกรรมบ่อย ทั้งงานเลี้ยงต้อนรับน้องใหม่ กิจกรรมจับฉลากปีใหม่ คือทำให้ได้เจอเพื่อนเยอะขึ้น ไม่ต้องอยู่แบบเหงาๆ ห้องพักก็โอเคเลย มีเฟอร์ครบ อยู่สบาย ใกล้มหา'ลัยด้วย แฮปปี้มากครับ",
+      "img": "reviewImageMix.png"
+    }
+  ],
+  "sliders": [
+    {
+      "id": 1,
+      "img": "/src/assets/images/banner1-img.png"
+    },
+    {
+      "id": 2,
+      "img": "/src/assets/images/banner2-img.png"
+    },
+    {
+      "id": 3,
+      "img": "/src/assets/images/banner3-img.png"
+    },
+    {
+      "id": 4,
+      "img": "/src/assets/images/banner4-img.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "66130500018",
+      "password": "dc1f27d1895aca32efe0b3e473e4f8efdeea4afff9b93963693b4f482faea6bb",
+      "firstName": "Chananthorn",
+      "lastName": "Srivorachai",
+      "gender": "female",
+      "email": "chananthorn.sriv@goosebomb.com",
+      "phone": "098 7654321",
+      "faculty": "เทคโนโลยีสารสนเทศ",
+      "major": "เทคโนโลยีสารสนเทศ",
+      "roomID": "3301",
+      "roomType": "2 คน ปรับอากาศ ห้องน้ำในตัว"
+    },
+    {
+      "id": "66130500021",
+      "password": "03146056a81fcee252940a62f3f63acd8c5caf3fd922e7f8ef34f5222e88e08c",
+      "firstName": "Chanya",
+      "lastName": "Nimtavorn",
+      "gender": "female",
+      "email": "chanya.nimt@goosebomb.com",
+      "phone": "081 9876543",
+      "faculty": "วิศวกรรมศาสตร์",
+      "major": "วิศวกรรมคอมพิวเตอร์",
+      "roomID": "5412",
+      "roomType": "2 คน ปรับอากาศ ห้องน้ำรวม"
+    },
+    {
+      "id": "66130500034",
+      "password": "c3c103468dc5a7cf68ed09007bcd389db4918d235c0f54199f0bf2ace7979550",
+      "firstName": "Tanin",
+      "lastName": "Kaoaian",
+      "gender": "male",
+      "email": "tanin.kaoa@goosebomb.com",
+      "phone": "099 8765432",
+      "faculty": "วิทยาศาสตร์",
+      "major": "วิทยาการคอมพิวเตอร์",
+      "roomID": "2305",
+      "roomType": "2 คน พัดลม ห้องน้ำในตัว"
+    },
+    {
+      "id": "66130500054",
+      "password": "075c7ab83279cdce561e648481f7bb8c5337818a2b2cd8c5b74dcf8344bf0696",
+      "firstName": "Benyaporn",
+      "lastName": "Maethawiwatkul",
+      "gender": "female",
+      "email": "benyaporn.maet@goosebomb.com",
+      "phone": "085 2345678",
+      "faculty": "ครุศาสตร์",
+      "major": "ภาษาไทย",
+      "roomID": "4507",
+      "roomType": "2 คน พัดลม ห้องน้ำรวม"
+    },
+    {
+      "id": "66130500061",
+      "password": "7d18d400f08165d0416134a2efc6d20bb25a0789a588e01c6ed59cb64c06d11c",
+      "firstName": "Pannaporn",
+      "lastName": "Anothaisinthavee",
+      "gender": "female",
+      "email": "pannaporn.anot@goosebomb.com",
+      "phone": "099 7755331",
+      "faculty": "บริหารธุรกิจ",
+      "major": "บัญชี",
+      "roomID": "4211",
+      "roomType": "3 คน ปรับอากาศ ห้องน้ำรวม"
+    }
+  ]
 }
