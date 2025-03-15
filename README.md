@@ -16,26 +16,26 @@
 
 | ลำดับ | รหัสนักศึกษา   |      สัปดาห์ที่ 1     |     สัปดาห์ที่ 2   |    สัปดาห์ที่ 3    |    สัปดาห์ที่ 4    |
 |------|--------------|-----------------|-----------------|-----------------|-----------------|
-| 1     | 66130500018     |    Figma Design  | Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue |
-| 2     | 66130500021     |    Design System, Figma Design  | Component Structure , Banner.vue, Reason.vue |
-| 3     | 66130500034     |    Figma Design  | Component Structure , Slider.vue (next, prev, imageSlider function)|
-| 4     | 66130500054     |    Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue |
-| 5     | 66130500061     |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue |
+| 1     | 66130500018     |    Figma Design  | Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue | RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), update Dropdown.vue (watch) |
+| 2     | 66130500021     |    Design System, Figma Design  | Component Structure , Banner.vue, Reason.vue | Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function) |
+| 3     | 66130500034     |    Figma Design  | Component Structure , Slider.vue (next, prev, imageSlider function)| RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), update Slider.vue |
+| 4     | 66130500054     |    Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue | Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), update Announcement.vue (onMounted) |
+| 5     | 66130500061     |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue | Login.vue (login, hashPassword, validateInput function), update Review.vue (onMounted, prevReview, nextReview, selectReview function) |
 
 --------------
 
 
-# การแบ่งงาน (In Process)
+# การแบ่งงาน
 
-✅ **018** - Figma Design, Component Structure , Navbar.vue (setUnderline function, resetUnderline function, openDropdown function, closeDropdown function), Room.vue, Roomtype.vue
+✅ **018** - Figma Design, Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue, RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), Rule.vue, Payment.vue
 
-✅ **021** - Design System , Figma Design, Component Structure , Banner.vue, Reason.vue
+✅ **021** - Design System , Figma Design, Component Structure , Banner.vue, Reason.vue, Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function), Payment.vue
 
-✅ **034** - Figma Design, Component Structure , Slider.vue (next function, prev function, imageSlider function)
+✅ **034** - Figma Design, Component Structure , Slider.vue (next, prev, imageSlider function), RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), Reserve.vue
 
-✅ **054** - Figma Design, Component Structure , Announcement.vue, News.vue, Footer.vue
+✅ **054** - Figma Design, Component Structure , Announcement.vue, News.vue, Footer.vue, Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), Reserve.vue
 
-✅ **061** - Figma Design, Component Structure , Review.vue, ReviewCard.vue
+✅ **061** - Figma Design, Component Structure , Review.vue (onMounted, prevReview, nextReview, selectReview function), ReviewCard.vue, Login.vue (login, hashPassword, validateInput function), Reserve.vue
 
 --------------
 
