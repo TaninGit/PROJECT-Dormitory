@@ -52,14 +52,14 @@ const getStatusColor = (status) => {
 
 const getProgressIcon = (status) => {
   if (status === "รอดำเนินการ") {
-    return "/src/assets/icon/waitIcon.png";
+    return "./iconImages/waitIcon.png";
   } else if (status === "กำลังดำเนินการ") {
-    return "/src/assets/icon/inProgressIcon.png";
+    return "./iconImages/inProgressIcon.png";
   } else if (status === "ดำเนินการเรียบร้อย") {
-    return "/src/assets/icon/finishProgressIcon.png";
+    return "./iconImages/finishProgressIcon.png";
   }
   return "";
-};
+}
 
 const toggleDetails = (index) => {
   expended.value = expended.value === index ? null : index;
@@ -100,8 +100,7 @@ const deleteReport = async (id, repairId) => {
 
 <template>
   <div class="font-noto-sans-thai">
-    <div class="w-screen h-screen flex item-center justify-center"
-      style="background-image: url('src/assets/background/dormBackground.png')">
+    <div class="bg-[url('../assets/background/dormBackground.png')] w-screen h-screen flex item-center justify-center">
       <div class="pt-25 flex flex-col item-center justify-center items-center">
         <div class="w-350 h-25 flex gap-5">
           <button type="button" class="flex items-center justify-center cursor-pointer">
@@ -114,7 +113,7 @@ const deleteReport = async (id, repairId) => {
           </h1>
           <button
             class="bg-[#404546] hover:bg-[#313637] text-white font-light mt-4 mb-4 px-10 rounded-xl font-noto-sans-thai ml-113 cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-            <img src="/src/assets/icon/externalLinkIcon.png" alt="externalLinkIcon" class="inline w-5 h-5 mr-1" />
+            <img src="../../assets/icon/externalLinkIcon.png" alt="externalLinkIcon" class="inline w-5 h-5 mr-1" />
             <span>กรอกฟอร์มแจ้งซ่อมแซม</span>
           </button>
         </div>
@@ -139,6 +138,7 @@ const deleteReport = async (id, repairId) => {
                 <div :class="getStatusColor(report.status)" class="font-medium">
                   <img v-if="report.status === 'รอดำเนินการ'" :src="getProgressIcon(report.status)" alt="icon"
                     class="inline w-4 h-4 mr-2" />
+                    
                   <img v-else-if="report.status === 'กำลังดำเนินการ'" :src="getProgressIcon(report.status)" alt="icon"
                     class="inline w-4 h-4 mr-2" />
                   <img v-else-if="report.status === 'ดำเนินการเรียบร้อย'" :src="getProgressIcon(report.status)"
