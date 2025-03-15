@@ -6,7 +6,7 @@ const props = defineProps({
   required: Boolean
 });
 
-const inputValue = defineModel()
+const inputValue = defineModel();
 
 </script>
 <template>

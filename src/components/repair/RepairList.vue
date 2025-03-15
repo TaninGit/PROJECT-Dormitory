@@ -30,7 +30,7 @@ onMounted(async () => {
   try {
     userInfo.value = await getItems(`${import.meta.env.VITE_APP_URL}/users`);
     userProfile.value = userInfo.value.find(
-      (user) => user.studentID === currentStudentId
+      (user) => user.id === currentStudentId
     );
   } catch (error) {
     console.log(error);
@@ -75,10 +75,10 @@ const confirmDelete = (reportId) => {
   showDeleteConfirm.value = true;
 };
 
-const deleteReport = async (studentId, repairId) => {
+const deleteReport = async (id, repairId) => {
   if (!selectedReportId.value) return;
   try {
-    const student = await getItemById(`${import.meta.env.VITE_APP_URL}/repairs`, studentId)
+    const student = await getItemById(`${import.meta.env.VITE_APP_URL}/repairs`, id)
 
     if (student && student.reports) {
       const index = student.reports.findIndex(report => report.repairId === repairId);

@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 const props = defineProps({
   label: String,
@@ -7,8 +7,13 @@ const props = defineProps({
   placeholder: {
     type: String,
     default: "โปรดเลือก"
+  },
+  modelValue: {
+    type: String,
+    default: ''
   }
 })
+
 const selectedValue = ref("")
 const openDropdown = ref(false);
 
@@ -19,6 +24,11 @@ const selectItem = (item) => {
   selectedValue.value = item
   openDropdown.value = false
 }
+
+const emit = defineEmits();
+watch(selectedValue, (newValue) => {
+  emit('update:modelValue', newValue);
+});
 
 </script>
 
