@@ -112,12 +112,12 @@
       "reports": [
         {
           "repairId": "R009",
-          "repairType": "งานไฟฟ้า",
+          "repairType": "งานประปา",
           "reportTime": "2025-03-09",
-          "title": "ปลั๊กไฟเสีย",
+          "title": "น้ำไม่ไหล",
           "status": "รอดำเนินการ",
-          "appointmentTime": "09:00-10:00",
-          "appointmentDate": "2025-03-11"
+          "appointmentTime": "11:00-12:00",
+          "appointmentDate": "2025-03-29"
         },
         {
           "repairId": "R010",
