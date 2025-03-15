@@ -1,13 +1,16 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import Button from '../form/Button.vue';
 import Input from '../form/Input.vue';
 import Dropdown from '../form/Dropdown.vue';
 import { getItems } from "../../libs/fetchUtils.js";
 
+
+
 const props = defineProps({
   submitAction: Function,
-  function: String
+  function: String,
+  repairData: Object
 });
 
 const currentStudentId = "66130500054";
@@ -20,6 +23,7 @@ onMounted(async () => {
     userProfile.value = userInfo.value.find(
       (user) => user.id === currentStudentId
     );
+    
   } catch (error) {
     console.log(error);
   }
@@ -29,11 +33,27 @@ const emits = defineEmits(["addNewRepair"]);
 
 const newRepair = ref({
   studentId: currentStudentId,
-  repairType: "",
-  title: "",
-  appointmentDate: "",
-  appointmentTime: ""
-});
+  repairType: props.repairData?.repairType || '',
+  title: props.repairData?.title || '',
+  appointmentDate: props.repairData?.appointmentDate || '',
+  appointmentTime: props.repairData?.appointmentTime || ''
+}
+);
+
+watch(() => props.repairData, (newData) => {
+  if (newData) {
+    newRepair.value = {
+      studentId: currentStudentId,
+      repairType: newData?.repairType || '',
+      title: newData?.title || '',
+      appointmentDate: newData?.appointmentDate || '',
+      appointmentTime: newData?.appointmentTime || ''
+    };
+    console.log('ข้อมูลใหม่จาก repairData:', newRepair.value);
+  }
+}, { immediate: true });
+
+console.log(newRepair.value.appointmentDate) 
 
 const repairTypeOptions = ['งานไฟฟ้า', 'งานประปา', 'อื่นๆ'];
 const timeOptions = ['09:00-10:00', '10:00-11:00', '11:00-12:00', '13:00-14:00', '14:00-15:00', '15:00-16:00'];
@@ -74,7 +94,7 @@ const validateSubmit = () => {
         <div 
           class="block w-[390px] appearance-none text-lg font-noto-sans-thai text-[#404546] border-[#404546] border rounded-full pl-4 pr-10 py-2 bg-[rgba(98,102,103,0.5)] stroke-[1.5px]"
         >
-            {{ userProfile.roomID }}
+            {{ userProfile.roomID }} 
         </div>
     </div>
     <div>
@@ -93,7 +113,7 @@ const validateSubmit = () => {
       <Dropdown 
         label="ประเภทงาน" 
         :list="repairTypeOptions"
-        placeholder="โปรดเลือกประเภทงาน"
+        :placeholder= "newRepair.repairType ? newRepair.repairType : 'โปรดเลือกประเภทงาน'"
         v-model="newRepair.repairType"
       />
     </div>
@@ -107,6 +127,7 @@ const validateSubmit = () => {
         <textarea type="longtext" v-model="newRepair.title"
           class="block w-[818px] h-[100px] appearance-none text-lg font-noto-sans-thai text-[#404546] bg-white border border-[#404546] rounded-3xl pl-4 pr-10 py-2">
         </textarea>
+        
       </div>
     </div>
 
@@ -129,7 +150,7 @@ const validateSubmit = () => {
       <Dropdown 
         label="เวลานัดหมาย" 
         :list="timeOptions"
-        placeholder="โปรดเลือกเวลานัดหมาย"
+        :placeholder= "newRepair.appointmentTime ? newRepair.appointmentTime : 'โปรดเลือกเวลานัดหมาย'"
         v-model="newRepair.appointmentTime" 
         :required="true"
       />
