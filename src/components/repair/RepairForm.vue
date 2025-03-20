@@ -49,7 +49,6 @@ watch(() => props.repairData, (newData) => {
       appointmentDate: newData?.appointmentDate || '',
       appointmentTime: newData?.appointmentTime || ''
     };
-    console.log('ข้อมูลใหม่จาก repairData:', newRepair.value);
   }
 }, { immediate: true });
 
