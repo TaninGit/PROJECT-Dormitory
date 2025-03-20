@@ -370,5 +370,52 @@
       "roomID": "4211",
       "roomType": "3 คน ปรับอากาศ ห้องน้ำรวม"
     }
+  ],
+  "payments": [
+    {
+      "id": "66130500018",
+      "report": {
+        "rent": 3500,
+        "electricity": 750,
+        "refNumber1": "20250318001",
+        "refNumber2": "20250318002"        
+      }  
+    },    
+    {
+      "id": "66130500021",
+      "report": {
+        "rent": 3000,
+        "electricity": 640,
+        "refNumber1": "20250318003",
+        "refNumber2": "20250318004"        
+      }  
+    },
+    {
+      "id": "66130500034",
+      "report": {
+        "rent": 3000,
+        "electricity": 550,
+        "refNumber1": "20250318005",
+        "refNumber2": "20250318006"        
+      }  
+    },
+    {
+      "id": "66130500054",
+      "report": {
+        "rent": 2500,
+        "electricity": 400,
+        "refNumber1": "20250318007",
+        "refNumber2": "20250318008"        
+      }  
+    },
+    {
+      "id": "66130500061",
+      "report": {
+        "rent": 2500,
+        "electricity": 420,
+        "refNumber1": "20250318009",
+        "refNumber2": "20250318010"        
+      }  
+    }
   ]
 }
