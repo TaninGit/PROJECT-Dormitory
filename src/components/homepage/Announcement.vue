@@ -2,6 +2,7 @@
 import news from './News.vue';
 import { ref, onMounted } from 'vue';
 import { getItems } from '../../libs/fetchUtils.js'
+
 const newsList = ref([])
 
 onMounted(async () => {
