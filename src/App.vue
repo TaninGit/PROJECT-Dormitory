@@ -6,20 +6,22 @@ import Footer from "./components/Footer.vue";
 import AddRepairForm from "./components/repair/AddRepairForm.vue";
 import UpdateRepairForm from "./components/repair/UpdateRepairForm.vue";
 import RepairList from "./components/repair/RepairList.vue";
-import Login from "./components/pages/Login.vue";
+import RoomDetail from "./components/pages/RoomDetail.vue";
 import Profile from "./components/pages/Profile.vue";
+import Login from "./components/pages/Login.vue";
 import Payment from "./components/pages/Payment.vue";
 </script>
 
 <template>
     <Navbar />
-    <Payment></Payment>
-    <!-- <Profile></Profile> -->
+    <RoomDetail></RoomDetail>
+    <!-- <Payment></Payment> -->
     <!-- <Login></Login> -->
     <!-- <Homepage></Homepage> -->
     <!-- <RepairList></RepairList> -->
     <!-- <UpdateRepairForm></UpdateRepairForm> -->
     <!-- <AddRepairForm></AddRepairForm> -->
+    <!-- <Profile></Profile> -->
     <Footer></Footer>
 </template>
 
