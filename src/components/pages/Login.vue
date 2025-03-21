@@ -3,6 +3,7 @@ import { ref } from "vue";
 import Input from '../form/Input.vue';
 import Button from '../form/Button.vue';
 import { getItemById } from "../../libs/fetchUtils";
+import { hashPassword } from "../../libs/hashPassword";
 
 const input = ref({
     id: '',
@@ -30,14 +31,6 @@ const login = async () => {
     }
 }
 
-const hashPassword = async (passwd) => {
-    const buffer = new TextEncoder().encode(passwd)
-    const hashBuffer = await crypto.subtle.digest('SHA-256', buffer)
-    const hashArray = Array.from(new Uint8Array(hashBuffer))
-    const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('')
-    return hashHex
-}
-
 const showErrorId = ref(false)
 const showErrorPassword = ref(false)
 
@@ -49,7 +42,7 @@ const validateInput = () => {
 </script>
  
 <template>
-<div class="bg-[url(../assets/background/dormBackground.png)] bg-cover bg-center w-screen h-screen">
+<div class="bg-[url(../assets/background/dormBackground.png)] bg-cover bg-center w-screen h-screen font-noto-sans-thai">
     <div class="flex flex-col justify-center items-center space-y-10 h-full">
         <button type="button" class="flex items-center justify-center cursor-pointer left-20 absolute bg-[#E09F3E] px-3 py-1 rounded-full top-30">
             <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="w-14" />
@@ -70,10 +63,10 @@ const validateInput = () => {
                 </div>
             </div>
         </div>
-        <Button :backgroundColor="'#E09F3E'" :hover="'#E09F3E'" :text="'เข้าสู่ระบบ'" @click="login" />
-    </div>
-    <div>
-        
+        <div >
+            <Button :backgroundColor="'#E09F3E'" :hover="'#D18D2D'" :text="'เข้าสู่ระบบ'" @click="login" />
+            <p class="text-white mt-3 text-center">ยังไม่มีบัญชี? <span class="text-[#FFC773] underline">สมัครใช้งาน</span></p>
+        </div>
     </div>
 </div>
 </template>
