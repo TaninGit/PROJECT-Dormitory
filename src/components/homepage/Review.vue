@@ -62,7 +62,7 @@ const selectReview = (index) => {
                 <div class="flex flex-row items-center duration-1000"
                     :style="`translate: ${translate}rem`">
                     <div v-for="(review, index) in reviews" :key="index" :id="`review${review.id}`">
-                        <ReviewCard :id="review.id" :selected="selected">
+                        <ReviewCard :id="Number(review.id)" :selected="selected">
                             <template #image>
                                 <img :src="`./reviewImages/${review.img}`" alt="รูปผู้รีวิว">
                             </template>

@@ -10,13 +10,17 @@ import RoomDetail from "./components/pages/RoomDetail.vue";
 import Profile from "./components/pages/Profile.vue";
 import Login from "./components/pages/Login.vue";
 import Payment from "./components/pages/Payment.vue";
+import SignUp from "./components/pages/SignUp.vue";
+import RegistrationSuccess from "./components/pages/RegistrationSuccess.vue";
 </script>
 
 <template>
     <Navbar />
-    <RoomDetail></RoomDetail>
+    <!-- <RoomDetail></RoomDetail> -->
     <!-- <Payment></Payment> -->
     <!-- <Login></Login> -->
+    <SignUp></SignUp>
+    <!-- <RegistrationSuccess></RegistrationSuccess> -->
     <!-- <Homepage></Homepage> -->
     <!-- <RepairList></RepairList> -->
     <!-- <UpdateRepairForm></UpdateRepairForm> -->
