@@ -4,7 +4,7 @@ import Reason from '../homepage/Reason.vue'
 import Announcement from "../homepage/Announcement.vue"
 import Room from '../homepage/Room.vue'
 import Slider from '../homepage/Slider.vue'
-// import Review from '../homepage/Review.vue'
+import Review from '../homepage/Review.vue'
 </script>
  
 <template>
@@ -14,7 +14,7 @@ import Slider from '../homepage/Slider.vue'
     <Slider/>
     <Announcement/>
     <Room/>
-    <!-- <Reason/> -->
+    <Reason/>
     <Review/>
 </div>
     

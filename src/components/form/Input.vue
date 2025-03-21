@@ -1,12 +1,22 @@
 <script setup>
+import { ref, watch } from 'vue'
 
 const props = defineProps({
   label: String,
   inputType: String,
-  required: Boolean
+  required: Boolean,
+  modelValue: {
+    type: String,
+    default: ''
+  }
 });
 
-const inputValue = defineModel();
+const inputValue = ref('')
+
+const emit = defineEmits();
+watch(inputValue, (newValue) => {
+  emit('update:modelValue', newValue);
+});
 
 </script>
 <template>
@@ -21,5 +31,5 @@ const inputValue = defineModel();
   </div>
   </div>
 </template>
-<style scoped></style>
+
 <style scoped></style>
