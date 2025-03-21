@@ -51,7 +51,7 @@ watch(selectedValue, (newValue) => {
       </div>
 
       <ul v-if="openDropdown"
-        class=" mt-1 bg-white border border-[#404546] rounded-2xl shadow-lg max-h-60 w-[390px] absolute z-10">
+        class=" mt-1 bg-white border border-[#404546] rounded-2xl shadow-lg w-[390px] absolute z-10">
         <li v-for="(item, index) in list" :key="index" @click="selectItem(item)"
           class="px-4 py-2 cursor-pointer text-black font-noto-sans-thai rounded-2xl hover:bg-[#9DB5B2]/50">
           {{ item }}
