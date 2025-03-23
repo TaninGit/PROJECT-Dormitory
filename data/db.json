@@ -246,7 +246,7 @@
   ],
   "reviews": [
     {
-      "id": 1,
+      "id": "1",
       "name": "น้ำฝน",
       "faculty": "วิศวกรรมศาสตร์",
       "batch": 65,
@@ -254,7 +254,7 @@
       "img": "reviewImageNamfon.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "โจ้",
       "faculty": "บริหารธุรกิจ",
       "batch": 66,
@@ -262,7 +262,7 @@
       "img": "reviewImageJoe.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "สกาย",
       "faculty": "วิทยาศาสตร์",
       "batch": 63,
@@ -270,7 +270,7 @@
       "img": "reviewImageSky.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "เบลล์",
       "faculty": "มนุษยศาสตร์",
       "batch": 64,
@@ -278,7 +278,7 @@
       "img": "reviewImageBell.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "มิกซ์",
       "faculty": "สถาปัตยกรรมศาสตร์",
       "batch": 60,
@@ -288,19 +288,19 @@
   ],
   "sliders": [
     {
-      "id": 1,
+      "id": "1",
       "img": "./banners/banner1-img.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "img": "./banners/banner2-img.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "img": "./banners/banner3-img.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "img": "./banners/banner4-img.png"
     }
   ],
@@ -420,7 +420,7 @@
   ],
   "roomdetails": [
     {
-      "id": 1,
+      "id": "1",
       "image": "doubleRoom.png",
       "title": "ห้องพัก 2 คน",
       "subtitle": "ห้องน้ำในตัว (ห้องปรับอากาศ และห้องพัดลม)",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "tripleRoom.png",
       "title": "ห้องพัก 3 คน",
       "subtitle": "ห้องน้ำรวม (ห้องปรับอากาศ)",
@@ -492,7 +492,7 @@
   ],
   "faculties": [
     {
-      "id": 1,
+      "id": "1",
       "name": "เทคโนโลยีสารสนเทศ",
       "majors": [
         {
@@ -510,7 +510,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "สถาปัตยกรรมศาสตร์และการออกแบบ",
       "majors": [
         {
@@ -536,7 +536,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "ครุศาสตร์อุตสาหกรรมและเทคโนโลยี",
       "majors": [
         {

@@ -9,11 +9,10 @@ import { getItems } from "../../libs/fetchUtils.js";
 
 const props = defineProps({
   submitAction: Function,
-  function: String,
   repairData: Object
 });
 
-const currentStudentId = "66130500054";
+const currentStudentId = localStorage.getItem('currentUser');
 const userProfile = ref([]);
 const userInfo = ref([]);
 
@@ -59,14 +58,14 @@ const timeOptions = ['09:00-10:00', '10:00-11:00', '11:00-12:00', '13:00-14:00',
 
 const validateSubmit = () => {
   newRepair.value.repairTypeError = newRepair.value.repairType ? '' : 'กรุณาเลือกประเภทงาน';
-  newRepair.value.titleError = newRepair.value.title ? '' : 'กรุณากรอกรายละเอียด';
+  newRepair.value.titleError = newRepair.value.title.trim() ? '' : 'กรุณากรอกรายละเอียด';
   newRepair.value.appointmentDateError = newRepair.value.appointmentDate ? '' : 'กรุณากรอกวันนัดหมาย';
   newRepair.value.appointmentTimeError = newRepair.value.appointmentTime ? '' : 'กรุณาเลือกเวลานัดหมาย';
-  const isValid = newRepair.value.repairType && newRepair.value.title && newRepair.value.appointmentDate && newRepair.value.appointmentTime;
+  const isValid = newRepair.value.repairType && newRepair.value.title.trim() && newRepair.value.appointmentDate && newRepair.value.appointmentTime;
   if (!isValid) {
     return;
   }
-  props.submitAction(newRepair.value);  
+  props.submitAction(newRepair.value); 
 };
 
 </script>

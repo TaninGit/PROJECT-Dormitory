@@ -1,17 +1,23 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { getItems } from '../../libs/fetchUtils.js'
 
-const currentRoomdetail = '1'
+const route = useRoute()
 const roomDetail = ref([])
-const room = ref([])
+const room = ref(null)
 
 onMounted(async () => {
     try {
         roomDetail.value = await getItems(`${import.meta.env.VITE_APP_URL}/roomdetails`)
-        room.value = roomDetail.value.find(
-            (room) => room.id === currentRoomdetail
-        )
+        const roomId = String(route.params.id);
+        room.value = roomDetail.value.find((r) => r.id === roomId)
+
+        if (!room.value) {
+            console.error("Room not found:", roomId)
+        } else {
+            console.log("Loaded Room:", room.value)
+        }
     }
     catch (error) {
         console.log(error)
@@ -20,16 +26,17 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div>
+    <div v-if="room">
         <div class="h-15"></div>
         <div
             class="font-noto-sans-thai relative flex items-center justify-center min-h-screen bg-[url('../assets/background/dormBackground.png')] bg-cover bg-center">
             <button type="button"
-                class="absolute top-15 left-4 lg:left-8 z-10 flex items-center justify-center cursor-pointer">
+                class="absolute top-15 left-4 lg:left-8 z-10 flex items-center justify-center cursor-pointer"
+                @click="$router.go(-1)">
                 <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-8 lg:w-15" />
                 <img src="../../assets/icon/button-back.png" alt="back-button" class="w-10 lg:w-20" />
             </button>
-            <div class="bg-white rounded-[3rem]  px-5 lg:px-25 w-full max-w-8/10 shadow-lg relative py-30">
+            <div class="bg-white rounded-[3rem] px-5 lg:px-25 w-full max-w-8/10 shadow-lg relative py-15">
                 <div class="flex flex-col lg:flex-row justify-between items-start mb-10">
                     <div class="w-full lg:w-1/2 max-w-md mx-auto mb-6 lg:mb-0">
                         <img :src="`/roomtypes/${room.image}`" alt="รูปห้องพัก" class="w-full h-auto rounded-2xl">

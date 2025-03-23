@@ -4,7 +4,7 @@ import { getItems } from "../../libs/fetchUtils.js";
 import { editItem } from "../../libs/fetchUtils.js";
 import { ref, onMounted } from "vue";
 
-const currentStudentId = "66130500054";
+const currentStudentId = localStorage.getItem('currentUser');
 const studentRepairs = ref(null);
 
 onMounted(async () => {
@@ -66,12 +66,11 @@ const handleNewRepair = (newRepair) => {
 <template>
     <div class="bg-[url('../assets/background/dormBackground.png')] bg-cover bg-center w-full">
         <div class="pt-22 pr-10 pl-10 pb-10 flex">
-            <button type="button" class="flex items-center justify-center cursor-pointer absolute">
+            <button @click="$router.go(-1)" type="button" class="flex items-center justify-center cursor-pointer absolute">
                 <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
                 <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
             </button>
             <RepairForm :submitAction="handleNewRepair"></RepairForm>
         </div>
-
     </div>
 </template>

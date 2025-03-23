@@ -13,7 +13,7 @@
           อาคารตั้งอยู่ในทำเลที่เดินทางสะดวก ใกล้แหล่งอำนวยความสะดวกต่างๆ 
           เพื่อให้ผู้พักอาศัยใช้ชีวิตได้อย่างสะดวกสบายตลอดการเข้าพัก
         </p> 
-        <button class="bg-[#1E555C] font-noto-sans-thai pt-6 pb-6 pl-9 pr-9 text-2xl rounded-2xl">
+        <button class="bg-[#1E555C] font-noto-sans-thai pt-6 pb-6 pl-9 pr-9 text-2xl rounded-2xl cursor-pointer">
           จองห้องพัก
         </button>
       </div> 

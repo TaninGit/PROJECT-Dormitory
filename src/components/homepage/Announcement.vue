@@ -16,6 +16,7 @@ onMounted(async () => {
 </script>
 
 <template>
+<div class="bg-[rgba(157,181,178,0.25)] bg-cover w-screen py-5">
   <div class="m-5 md:m-10">
     <div class="w-full flex flex-col justify-center items-center text-center">
       <h1 class="font-noto-sans-thai text-[#1E555C] text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
@@ -81,6 +82,7 @@ onMounted(async () => {
       </div>
     </div>
   </div>
+</div>
 </template>
 
 

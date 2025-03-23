@@ -4,6 +4,10 @@ import Input from '../form/Input.vue';
 import Button from '../form/Button.vue';
 import { getItemById } from "../../libs/fetchUtils";
 import { hashPassword } from "../../libs/hashPassword";
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 
 const input = ref({
     id: '',
@@ -21,7 +25,8 @@ const login = async () => {
         const hashInputPassword = await hashPassword(input.value.password)
         if (user.password === hashInputPassword) {
             currentUser.value = input.value.id
-            // go to profile page
+            localStorage.setItem('currentUser', input.value.id);
+            router.push('/profile');
         } else {
             invalidInput.value = true
         }
@@ -44,9 +49,6 @@ const validateInput = () => {
 <template>
 <div class="bg-[url(../assets/background/dormBackground.png)] bg-cover bg-center w-screen h-screen font-noto-sans-thai">
     <div class="flex flex-col justify-center items-center space-y-10 h-full">
-        <button type="button" class="flex items-center justify-center cursor-pointer left-20 absolute bg-[#E09F3E] px-3 py-1 rounded-full top-30">
-            <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="w-14" />
-        </button>
         <div class="bg-white px-20 py-15 rounded-4xl border-2 border-[#9DB5B2]">
             <div class="pb-7">
                 <p class="text-center text-4xl font-bold text-[#404546]">LOG IN</p>
@@ -65,7 +67,11 @@ const validateInput = () => {
         </div>
         <div >
             <Button :backgroundColor="'#E09F3E'" :hover="'#D18D2D'" :text="'เข้าสู่ระบบ'" @click="login" />
-            <p class="text-white mt-3 text-center">ยังไม่มีบัญชี? <span class="text-[#FFC773] underline">สมัครใช้งาน</span></p>
+            <p class="text-white mt-3 text-center">ยังไม่มีบัญชี? 
+            <RouterLink to="/signup">
+                <span class="text-[#FFC773] underline cursor-pointer">สมัครใช้งาน</span>
+            </RouterLink>
+            </p>
         </div>
     </div>
 </div>
