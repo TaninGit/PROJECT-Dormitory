@@ -25,6 +25,7 @@ const logout = () => {
   localStorage.removeItem("currentUser");
   router.push("/login");
 };
+
 </script>
 
 <template>

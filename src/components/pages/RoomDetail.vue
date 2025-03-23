@@ -25,7 +25,6 @@ onMounted(async () => {
 })
 </script>
 
-
 <template>
     <div v-if="room">
         <div class="h-15"></div>
