@@ -1,5 +1,4 @@
 <script setup>
-import Button from '../form/Button.vue';
 </script>
  
 <template>
@@ -15,7 +14,9 @@ import Button from '../form/Button.vue';
                 </svg>
             </div>
             <p class="text-center text-2xl font-bold text-[#404546] mt-7">การลงทะเบียนเสร็จสิ้น!</p>
-            <button class="absolute bottom-6 text-white font-bold bg-[#E09F3E] hover:bg-[#D18D2D] py-2 px-10 rounded-xl">ตกลง</button>
+            <RouterLink to="/login">
+                <button class="mt-10 cursor-pointer bottom-6 text-white font-bold bg-[#E09F3E] hover:bg-[#D18D2D] py-2 px-10 rounded-xl">ตกลง</button>
+            </RouterLink>
         </div>
     </div>
 </div>

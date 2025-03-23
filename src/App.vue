@@ -15,17 +15,20 @@ import RegistrationSuccess from "./components/pages/RegistrationSuccess.vue";
 </script>
 
 <template>
-    <Navbar />
+    <!-- <Navbar /> -->
     <!-- <RoomDetail></RoomDetail> -->
     <!-- <Payment></Payment> -->
     <!-- <Login></Login> -->
-    <SignUp></SignUp>
+    <!-- <SignUp></SignUp> -->
     <!-- <RegistrationSuccess></RegistrationSuccess> -->
     <!-- <Homepage></Homepage> -->
     <!-- <RepairList></RepairList> -->
     <!-- <UpdateRepairForm></UpdateRepairForm> -->
     <!-- <AddRepairForm></AddRepairForm> -->
     <!-- <Profile></Profile> -->
+    <!-- <Footer></Footer> -->
+    <Navbar></Navbar>
+        <RouterView></RouterView>
     <Footer></Footer>
 </template>
 

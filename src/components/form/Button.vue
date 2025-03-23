@@ -15,7 +15,7 @@ const isHovered = ref(false);
     <div>
         <button
         :style="{ backgroundColor: isHovered ? hover : backgroundColor }"
-        class="font-noto-sans-thai font-bold text-white w-88 h-14 rounded-3xl text-[22px]"
+        class="font-noto-sans-thai font-bold text-white w-88 h-14 rounded-3xl text-[22px] cursor-pointer"
         @mouseover="isHovered = true"
         @mouseleave="isHovered = false">
             {{ text }}

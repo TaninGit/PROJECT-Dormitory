@@ -5,6 +5,9 @@ import Button from "../form/Button.vue";
 import Input from "../form/Input.vue";
 import Dropdown from "../form/Dropdown.vue";
 import { getItems, addItem } from "@/libs/fetchUtils";
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const step = ref(1)
 const genderList = ['male', 'female']
@@ -123,6 +126,7 @@ const nextStep = () => {
 const finish = () => {
     if (validateSubmit()) {
         addUser()
+        router.push('/registration-success');
     }
 }
 
@@ -157,7 +161,7 @@ const addUser = async () => {
 <template>
     <div class="bg-[url(../assets/background/dormBackground.png)] bg-cover bg-center bg-fixed w-full font-noto-sans-thai">
         <div class="flex justify-center h-full">
-            <button type="button" class="flex items-center justify-center cursor-pointer left-20 absolute bg-[#E09F3E] px-3 py-1 rounded-full top-30">
+            <button @click="$router.go(-1)" type="button" class="flex items-center justify-center cursor-pointer left-20 absolute bg-[#E09F3E] px-3 py-1 rounded-full top-30">
                 <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="w-14" />
             </button>
             <div class="mt-40 mb-20 flex flex-col gap-10 items-center">

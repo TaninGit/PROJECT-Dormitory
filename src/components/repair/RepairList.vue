@@ -3,11 +3,14 @@ import { getItems, getItemById, editItem } from "../../libs/fetchUtils.js";
 import { ref, onMounted } from "vue";
 const userRepair = ref([]);
 const repairInfo = ref([]);
-const currentStudentId = "66130500054"; // studentId
+const currentStudentId = localStorage.getItem('currentUser');
 const userProfile = ref([]);
 const userInfo = ref([]);
 const showDeleteConfirm = ref(false);
 const selectedReportId = ref(null);
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 onMounted(async () => {
   try {
@@ -65,11 +68,6 @@ const toggleDetails = (index) => {
   expended.value = expended.value === index ? null : index;
 };
 
-const handleEdit = (reportId) => {
-  alert(`แก้ไขรายการแจ้งซ่อม ID: ${reportId}`);
-  console.log(`Edit reportId: ${reportId}`);
-};
-
 const confirmDelete = (reportId) => {
   selectedReportId.value = reportId;
   showDeleteConfirm.value = true;
@@ -103,19 +101,23 @@ const deleteReport = async (id, repairId) => {
     <div class="bg-[url('../assets/background/dormBackground.png')] w-screen h-screen flex item-center justify-center">
       <div class="pt-25 flex flex-col item-center justify-center items-center">
         <div class="w-350 h-25 flex gap-5">
-          <button type="button" class="flex items-center justify-center cursor-pointer">
-            <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
-            <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
-          </button>
+          <RouterLink to="/profile">
+            <button type="button" class="flex items-center justify-center cursor-pointer">
+              <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
+              <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
+            </button>
+          </RouterLink>
           <h1
             class="bg-[#ffffff] border-3 border-[#E09F3E] text-[#1E555C] rounded-3xl mt-2 mb-2 px-15 text-4xl text-center flex items-center justify-center font-noto-sans-thai font-bold">
             บริการแจ้งซ่อมออนไลน์
           </h1>
-          <button
-            class="bg-[#404546] hover:bg-[#313637] text-white font-light mt-4 mb-4 px-10 rounded-xl font-noto-sans-thai ml-113 cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-            <img src="../../assets/icon/externalLinkIcon.png" alt="externalLinkIcon" class="inline w-5 h-5 mr-1" />
-            <span>กรอกฟอร์มแจ้งซ่อมแซม</span>
-          </button>
+          <RouterLink to="/add-repair">
+            <button
+              class="bg-[#404546] hover:bg-[#313637] text-white h-18 w-65 font-light mt-4 mb-4 px-10 rounded-xl font-noto-sans-thai ml-108 cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+              <img src="../../assets/icon/externalLinkIcon.png" alt="externalLinkIcon" class="inline w-5 h-5 mr-1" />
+              <span>กรอกฟอร์มแจ้งซ่อมแซม</span>
+            </button>
+          </RouterLink>
         </div>
         <div
           class="bg-[#ffffff] border-3 border-[#E09F3E] rounded-3xl w-300 h-120 overflow-y-auto [&::-webkit-scrollbar]:w-2 dark:[&::-webkit-scrollbar-track]:bg-[#ffffff] dark:[&::-webkit-scrollbar-track]:hidden dark:[&::-webkit-scrollbar-thumb]:bg-[#D49029] [&::-webkit-scrollbar-thumb]:rounded-full">
@@ -184,13 +186,15 @@ const deleteReport = async (id, repairId) => {
                     </div>
                     <div>
                       <div v-if="report?.status === 'รอดำเนินการ'" class="flex flex-col gap-1">
+                        <RouterLink :to="{ name: 'UpdateRepair', params: { repairId: report.repairId } }">
+                          <button
+                            class="bg-[#ffffff] hover:bg-[#EDEDED] w-25 border-3 border-[#404546] px-4 py-2 rounded-md cursor-pointer"
+                          >
+                            แก้ไข
+                          </button>
+                        </RouterLink>
                         <button
-                          class="bg-[#ffffff] hover:bg-[#EDEDED] border-3 border-[#404546] px-4 py-2 rounded-md cursor-pointer"
-                          @click="handleEdit(report.repairId)">
-                          แก้ไข
-                        </button>
-                        <button
-                          class="bg-[#ffffff] hover:bg-[#EDEDED] border-3 border-[#F1402C] px-4 py-2 rounded-md cursor-pointer"
+                          class="bg-[#ffffff] hover:bg-[#EDEDED] w-25 border-3 border-[#F1402C] px-4 py-2 rounded-md cursor-pointer"
                           @click="confirmDelete(report.repairId)">
                           ยกเลิก
                         </button>

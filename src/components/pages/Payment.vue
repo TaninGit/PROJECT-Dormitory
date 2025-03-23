@@ -32,10 +32,12 @@ const paymentInfo = ref(null)
     <div v-if="userInfo && paymentInfo" class="font-noto-sans-thai bg-[url('../assets/background/dormBackground.png')] bg-cover bg-center w-full h-310">
         <div class="h-20"></div>
         <div class="relative flex items-center p-10">
-            <button type="button" class="absolute left-10 flex items-center justify-center cursor-pointer">
-                <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
-                <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
-            </button>
+            <RouterLink to="/profile">
+                <button type="button" class="absolute bottom-10 left-10 flex items-center justify-center cursor-pointer">
+                    <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
+                    <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
+                </button>
+            </RouterLink>
             <div class="w-full flex justify-center">
                 <h1 class="text-white text-7xl font-noto-sans-thai font-bold text-center drop-shadow-[4px_4px_2px_rgba(0,0,0,0.5)]">
                     จ่ายบิลหอพัก
