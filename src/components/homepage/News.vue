@@ -2,13 +2,13 @@
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl">
-    <div class="m-5">
+  <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl p-3 m-5">
+    <div class="mt-5 mr-5">
       <slot name="image">
         <img src="" alt="" class="w-full h-auto" />
       </slot>
     </div>
-    <div class="mt-2 w-full pt-2">
+    <div class="mt-2 pt-2 w-full ">
       <slot name="header">
         <h3 class="font-noto-sans-thai text-[#404546] text-2xl font-bold">Header</h3>
       </slot>

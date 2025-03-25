@@ -2,12 +2,19 @@
 import news from './News.vue';
 import { ref, onMounted } from 'vue';
 import { getItems } from '../../libs/fetchUtils.js'
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const newsList = ref([])
 
 onMounted(async () => {
   try {
-    newsList.value = await getItems(`${import.meta.env.VITE_APP_URL}/news`)
+    const news = await getItems(`${import.meta.env.VITE_APP_URL}/news`)
+    console.log(news)
+    newsList.value = Object.values(news)
+    newsList.value = newsList.value.slice(0, 3);
+    console.log(newsList.value)
+    
   }
   catch (error) {
     console.log(error)
@@ -25,12 +32,14 @@ onMounted(async () => {
       <div class="w-24 md:w-[300px] h-1 md:h-[4px] bg-[#E09F3E] mt-2 rounded-md drop-shadow-md"></div>
     </div>
 
+    <RouterLink to="/news">   
     <div class="w-full flex justify-end items-center mt-3 cursor-pointer hover:underline hover:text-[#9db5b2]">
       <p class="font-noto-sans-thai text-[#1E555C] text-sm md:text-base lg:text-lg xl:text-xl">
         ดูทั้งหมด
       </p>
       <img src="../../assets/icon/arrowright.png" class="h-2 md:h-4 ml-2">
     </div>
+  </RouterLink>
 
     <div class="flex flex-col md:flex-row gap-5 mt-5">
       <div class="w-full md:w-9/16  p-5 cursor-pointer  hover:bg-gray-300 rounded-2xl ">
