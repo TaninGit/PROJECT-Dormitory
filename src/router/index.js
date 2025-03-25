@@ -11,6 +11,7 @@ import Repair from "@/components/pages/Repair.vue";
 import AddRepairForm from "@/components/repair/AddRepairForm.vue";
 import UpdateRepairForm from "@/components/repair/UpdateRepairForm.vue";
 import Payment from "@/components/pages/Payment.vue";
+import AboutUs from "@/components/pages/AboutUs.vue";
 const history = createWebHistory()
 const routes = [
     {
@@ -30,7 +31,7 @@ const routes = [
     {
         path:'/aboutus',
         name:'AboutUs',
-        component:Homepage
+        component:AboutUs
     },
     {
         path:'/news',
