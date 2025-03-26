@@ -10,11 +10,8 @@ const newsList = ref([])
 onMounted(async () => {
   try {
     const news = await getItems(`${import.meta.env.VITE_APP_URL}/news`)
-    console.log(news)
     newsList.value = Object.values(news)
-    newsList.value = newsList.value.slice(0, 3);
-    console.log(newsList.value)
-    
+    newsList.value = newsList.value.slice(0, 3);   
   }
   catch (error) {
     console.log(error)

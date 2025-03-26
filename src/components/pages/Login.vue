@@ -8,7 +8,6 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-
 const input = ref({
     id: '',
     password: ''
@@ -18,6 +17,7 @@ const currentUser = ref('')
 const invalidInput = ref(false)
 
 const login = async () => {
+    input.value.id = input.value.id.trim()
     validateInput()
     if (showErrorId.value === true || showErrorPassword.value === true) return
     try {
@@ -40,8 +40,8 @@ const showErrorId = ref(false)
 const showErrorPassword = ref(false)
 
 const validateInput = () => {
-    if (input.value.id.trim() === '') showErrorId.value = true
-    if (input.value.password.trim() === '') showErrorPassword.value = true
+    input.value.id === '' ? showErrorId.value = true : showErrorId.value = false
+    input.value.password === '' ? showErrorPassword.value = true : showErrorPassword.value = false
 }
 
 </script>
