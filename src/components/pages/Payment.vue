@@ -1,7 +1,7 @@
 <script setup>
 import { getItems } from '../../libs/fetchUtils';
 import { ref, onMounted } from 'vue';
-const currentStudentId = "66130500018"; // studentId
+const currentStudentId = localStorage.getItem('currentUser');
 const userList = ref([])
 const userInfo = ref(null)
 
