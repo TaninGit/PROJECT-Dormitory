@@ -13,12 +13,6 @@ onMounted(() => {
 <template>
   <div class="relative bg-cover bg-center py-25 w-full bg-[url('../assets/background/roomcomponentBackground.png')]">
     <div class="absolute inset-0 bg-black opacity-20"></div>
-    <button type="button"
-                class="absolute top-25 left-4 lg:left-8 z-10 flex items-center justify-center cursor-pointer"
-                @click="$router.go(-1)">
-            <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-8 lg:w-15" />
-            <img src="../../assets/icon/button-back.png" alt="back-button" class="w-10 lg:w-20" />
-    </button>
     <div class="relative z-10 flex flex-wrap justify-center gap-12 mt-12">
       <div class="relative z-10 w-64 flex flex-col justify-center items-center text-white font-noto-sans-thai drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)]">
         <h1 class="font-bold text-6xl">ห้องพัก</h1>

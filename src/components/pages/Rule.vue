@@ -5,12 +5,6 @@
 <template>
 <div>
     <div class="bg-[url('../assets/background/dormBackground.png')] bg-cover bg-center w-full h-screen flex flex-col items-center">
-        <button type="button"
-                class="absolute top-25 left-4 lg:left-8 z-10 flex items-center justify-center cursor-pointer"
-                @click="$router.go(-1)">
-            <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-8 lg:w-15" />
-            <img src="../../assets/icon/button-back.png" alt="back-button" class="w-10 lg:w-20" />
-        </button>
         <h1 class="pt-22 text-7xl font-noto-sans-thai font-bold drop-shadow-[4px_4px_1px_rgba(0,0,0,0.5)] text-white my-5">
             กฎระเบียบการเข้าพัก
         </h1>

@@ -41,7 +41,7 @@ onMounted(async () => {
                     <div class="w-full lg:w-1/2 max-w-md mx-auto mb-6 lg:mb-0">
                         <img :src="`/roomtypes/${room.image}`" alt="รูปห้องพัก" class="w-full h-auto rounded-2xl">
                     </div>
-                    <div class="w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2 pl-5">
                         <div class="text-center lg:text-left px-4 lg:px-0">
                             <h2 class="text-xl lg:text-2xl xl:text-3xl text-[#1E555C] font-bold ">{{ room.title }}</h2>
                             <p class="text-lg lg:text-xl xl:text-2xl text-[#1E555C] font-bold mb-5">{{ room.subtitle }}</p>

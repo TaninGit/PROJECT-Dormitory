@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl p-3 m-5">
+  <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl p-3">
     <div class="mt-5 mr-5">
       <slot name="image">
         <img src="" alt="" class="w-full h-auto" />
