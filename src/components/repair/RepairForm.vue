@@ -57,16 +57,26 @@ const repairTypeOptions = ['งานไฟฟ้า', 'งานประปา
 const timeOptions = ['09:00-10:00', '10:00-11:00', '11:00-12:00', '13:00-14:00', '14:00-15:00', '15:00-16:00'];
 
 const validateSubmit = () => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const selectedDate = newRepair.value.appointmentDate ? new Date(newRepair.value.appointmentDate) : null;
+
   newRepair.value.repairTypeError = newRepair.value.repairType ? '' : 'กรุณาเลือกประเภทงาน';
   newRepair.value.titleError = newRepair.value.title.trim() ? '' : 'กรุณากรอกรายละเอียด';
-  newRepair.value.appointmentDateError = newRepair.value.appointmentDate ? '' : 'กรุณากรอกวันนัดหมาย';
+  newRepair.value.appointmentDateError = selectedDate 
+    ? (selectedDate >= today ? '' : 'กรุณาเลือกวันที่ปัจจุบันหรืออนาคต') 
+    : 'กรุณากรอกวันนัดหมาย';
   newRepair.value.appointmentTimeError = newRepair.value.appointmentTime ? '' : 'กรุณาเลือกเวลานัดหมาย';
-  const isValid = newRepair.value.repairType && newRepair.value.title.trim() && newRepair.value.appointmentDate && newRepair.value.appointmentTime;
+
+  const isValid = newRepair.value.repairType && newRepair.value.title.trim() && selectedDate && selectedDate >= today && newRepair.value.appointmentTime;
+
   if (!isValid) {
     return;
   }
-  props.submitAction(newRepair.value); 
+  
+  props.submitAction(newRepair.value);
 };
+
 
 </script>
 
