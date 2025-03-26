@@ -27,9 +27,9 @@ onMounted(async () => {
                     </h2>
                 </div>
 
-                <div class="border-b-1 border-b-[#9db5b2] ">
-                    <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl p-3 m-5">
-                        <div class="mt-5 mr-5">
+                <div class="border-b-1 border-b-[#9db5b2] p-5 ">
+                    <div class="flex flex-col md:flex-row cursor-pointer hover:bg-gray-300 rounded-2xl p-3 ">
+                        <div class=" mr-5">
                         <img src="../../assets/images/mainNewsCrop.png" alt="news" class="w-full md:w-100 rounded-md">
 </div>
                         <div class="mt-2 w-full pt-2">
@@ -51,7 +51,7 @@ onMounted(async () => {
                 </div>
 
                 <div v-for="(news, index) in newsList" :key="index"
-                    class="border-b-1 border-b-[#9db5b2] last:border-none ">
+                    class="border-b-1 border-b-[#9db5b2] last:border-none p-5">
                     <news>
                         <template #image>
                             <img :src="`/news/${news.img}`" alt="news" class="w-full md:w-100 rounded-md">

@@ -16,11 +16,9 @@ onMounted(async () => {
   try {
     const repairsData = await getItems(`${import.meta.env.VITE_APP_URL}/repairs`);
     studentRepairs.value = repairsData.find(r => r.id === currentStudentId);
-    console.log(studentRepairs.value)
     
     if (studentRepairs.value) {
       currentRepair.value = studentRepairs.value.reports.find(report => report.repairId === repairId);
-      console.log(currentRepair.value)
     } else {
       console.error("ไม่พบข้อมูลการซ่อมของ studentId นี้");
     }

@@ -2,7 +2,6 @@
 import Banner from '../homepage/Banner.vue'
 import Reason from '../homepage/Reason.vue'
 import Announcement from "../homepage/Announcement.vue"
-import Room from './Room.vue'
 import Slider from '../homepage/Slider.vue'
 import Review from '../homepage/Review.vue'
 </script>

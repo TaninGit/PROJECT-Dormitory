@@ -148,12 +148,12 @@
       "reports": [
         {
           "repairId": "R009",
-          "repairType": "งานประปา",
+          "repairType": "งานไฟฟ้า",
           "reportTime": "2025-03-09",
-          "title": "น้ำไม่ไหล",
+          "title": "หลอดไฟเสีย",
           "status": "รอดำเนินการ",
-          "appointmentTime": "11:00-12:00",
-          "appointmentDate": "2025-03-29"
+          "appointmentTime": "14:00-15:00",
+          "appointmentDate": "2025-04-05"
         },
         {
           "repairId": "R010",
@@ -217,6 +217,24 @@
           "status": "ดำเนินการเรียบร้อย",
           "appointmentTime": "10:00-11:00",
           "appointmentDate": "2024-12-11"
+        },
+        {
+          "repairId": "R024",
+          "repairType": "อื่นๆ",
+          "reportTime": "2025-03-26",
+          "title": "พัดลมพัง",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "13:00-14:00",
+          "appointmentDate": "2025-04-05"
+        },
+        {
+          "repairId": "R025",
+          "repairType": "งานประปา",
+          "reportTime": "2025-03-26",
+          "title": "น้ำไหลเบา",
+          "status": "รอดำเนินการ",
+          "appointmentTime": "10:00-11:00",
+          "appointmentDate": "2025-04-05"
         }
       ]
     },
