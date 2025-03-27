@@ -74,6 +74,10 @@ const validateStudentId = (value) => {
     return String(value).length === 11 && !characterRegex.test(String(value))
 }
 
+const validateStudentIdExist = (value) => {
+    return allUsers.value.find(user => user.id === String(value)) !== undefined;
+};
+
 const validateConfirmPasswd = (previous, next) => {
     return String(previous) === String(next) 
 }
@@ -88,7 +92,16 @@ const validateEmail = (email) => {
 }
 
 const validateStep1 = () => {
-    message.value.idError = isNullOrEmpty(user.value.id) ? 'กรุณากรอกรหัสนักศึกษา' : (validateStudentId(user.value.id) ? '' : 'รหัสนักศึกษาต้องมี 11 หลัก และเป็นตัวเลขเท่านั้น')
+    if (isNullOrEmpty(user.value.id)) {
+        message.value.idError = 'กรุณากรอกรหัสนักศึกษา';
+    } else if (!validateStudentId(user.value.id)) {
+        message.value.idError = 'รหัสนักศึกษาต้องมี 11 หลัก และเป็นตัวเลขเท่านั้น';
+    } else if (validateStudentIdExist(user.value.id)) {
+        message.value.idError = 'มีการลงทะเบียนด้วยรหัสนักศึกษานี้แล้ว   ';
+    } else {
+        message.value.idError = '';
+    }
+ 
     message.value.passwordError = isNullOrEmpty(user.value.password) ? 'กรุณากรอกรหัสผ่าน' : ''
     message.value.confirmPasswordError = isNullOrEmpty(confirmPassword.value) ? 'กรุณายืนยันรหัสผ่าน' : (validateConfirmPasswd(user.value.password, confirmPassword.value) ? '' : 'รหัสผ่านไม่ตรงกัน')
     return Object.values(message.value).slice(0, 3).every(error => error === '')
@@ -126,7 +139,22 @@ const nextStep = () => {
 const finish = () => {
     if (validateSubmit()) {
         addUser()
+        addRepair()
         router.push('/registration-success');
+    }
+}
+
+const addRepair = async () => {
+    if(!validateSubmit()) return;
+    try{
+        const newRepairData = {
+        id: user.value.id.trim(),
+        reports: []
+    }
+        const newRepair = await addItem(`${import.meta.env.VITE_APP_URL}/repairs`, newRepairData)
+    }
+    catch(error) {
+        console.error(error);
     }
 }
 
