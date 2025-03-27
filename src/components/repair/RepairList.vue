@@ -1,6 +1,6 @@
 <script setup>
 import { getItems, getItemById, editItem } from "../../libs/fetchUtils.js";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 const userRepair = ref([]);
 const repairInfo = ref([]);
 const currentStudentId = localStorage.getItem('currentUser');
@@ -38,6 +38,20 @@ onMounted(async () => {
 });
 
 const expended = ref(null);
+
+const sortedReports = computed(() => {
+  if (!repairInfo.value || !repairInfo.value.reports) return [];
+
+  return [...repairInfo.value.reports].sort((a, b) => {
+    const order = { "รอดำเนินการ": 1, "กำลังดำเนินการ": 2, "ดำเนินการเรียบร้อย": 3 };
+
+    if (order[a.status] !== order[b.status]) {
+      return order[a.status] - order[b.status];
+    } else {
+      return new Date(b.reportTime) - new Date(a.reportTime);
+    }
+  });
+});
 
 const getStatusColor = (status) => {
   if (status === "กำลังดำเนินการ") {
@@ -126,7 +140,7 @@ const deleteReport = async (id, repairId) => {
               <div>ประเภทงานซ่อม</div>
             </div>
           </div>
-          <div v-for="(report, index) in repairInfo?.reports" :key="index"
+          <div v-for="(report, index) in sortedReports" :key="index"
             class="flex flex-col justify-center items-center text-center">
             <div class="pt-4 pb-4">
               <div :class="[

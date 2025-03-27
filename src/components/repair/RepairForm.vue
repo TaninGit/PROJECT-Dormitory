@@ -4,8 +4,9 @@ import Button from '../form/Button.vue';
 import Input from '../form/Input.vue';
 import Dropdown from '../form/Dropdown.vue';
 import { getItems } from "../../libs/fetchUtils.js";
+import { useRouter } from 'vue-router';
 
-
+const router = useRouter();
 
 const props = defineProps({
   submitAction: Function,
@@ -73,6 +74,7 @@ const validateSubmit = () => {
   }
 
   props.submitAction(newRepair.value);
+  router.push('/repair');
 };
 
 
@@ -155,9 +157,7 @@ const validateSubmit = () => {
     </div>
 
     <div class="mt-4 mx-auto">
-      <RouterLink to="/repair">
       <Button text="เสร็จสิ้น" backgroundColor="#E09F3E" hover="#D18D2D" @click="validateSubmit"></Button>
-      </RouterLink>
     </div>
   </div>
 </template>
