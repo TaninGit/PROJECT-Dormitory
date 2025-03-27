@@ -8,9 +8,6 @@ const userProfile = ref([]);
 const userInfo = ref([]);
 const showDeleteConfirm = ref(false);
 const selectedReportId = ref(null);
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
 
 onMounted(async () => {
   try {

@@ -2,9 +2,7 @@
 import news from './News.vue';
 import { ref, onMounted } from 'vue';
 import { getItems } from '../../libs/fetchUtils.js'
-import { useRouter } from "vue-router";
 
-const router = useRouter();
 const newsList = ref([])
 
 onMounted(async () => {
@@ -64,13 +62,13 @@ onMounted(async () => {
             </template>
 
             <template #header>
-              <h3 class="font-noto-sans-thai text-[#404546] text-base md:text-lg lg:text-xl xl:text-2xl font-bold">
+              <h3 class="font-noto-sans-thai text-[#404546] text-base md:text-base lg:text-lg xl:text-xl font-bold">
                 {{ news.header }}
               </h3>
             </template>
 
             <template #content>
-              <p class="font-noto-sans-thai text-[#404546] text-sm md:text-base lg:text-lg xl:text-xl">
+              <p class="font-noto-sans-thai text-[#404546] text-sm md:text-sm lg:text-sm xl:text-base w-50 truncate">
                 {{ news.desc }}
               </p>
             </template>

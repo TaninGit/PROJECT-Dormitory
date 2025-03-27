@@ -18,6 +18,10 @@ watch(inputValue, (newValue) => {
   emit('update:modelValue', newValue);
 });
 
+watch(() => props.modelValue, (newValue) => {
+  inputValue.value = newValue
+})
+
 </script>
 <template>
   <div>
