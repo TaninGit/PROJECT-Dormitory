@@ -28,8 +28,18 @@ const deleteUser = async (deleteUserId) => {
   try {
     const status = await deleteItemById(`${import.meta.env.VITE_APP_URL}/users`, deleteUserId)
     if (status === 200) {
+      deleteRepair(deleteUserId);
+      localStorage.removeItem("currentUser");
       router.push("/login");
     }
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+const deleteRepair = async (deleteRepairUserId) => {
+  try {
+    await deleteItemById(`${import.meta.env.VITE_APP_URL}/repairs`, deleteRepairUserId)
   } catch (error) {
     console.log(error)
   }
