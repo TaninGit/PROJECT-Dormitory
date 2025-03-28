@@ -98,7 +98,7 @@ const deleteRepair = async (deleteRepairUserId) => {
                 </div>
 
                 <button @click="showDeleteUserConfirm = true"
-                  class="w-full md:w-auto px-6 py-3 bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                  class="cursor-pointer w-full md:w-auto px-6 py-3 bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -118,7 +118,7 @@ const deleteRepair = async (deleteRepairUserId) => {
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                   <RouterLink to="/payment" class="block">
                     <button
-                      class="w-full h-32 bg-[#E09F3E] hover:bg-[#d8973a] active:bg-[#c78a35] text-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center p-4 group">
+                      class="cursor-pointer w-full h-32 bg-[#E09F3E] hover:bg-[#d8973a] active:bg-[#c78a35] text-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center p-4 group">
                       <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-10 w-10 mb-2 group-hover:scale-110 transition-transform" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
@@ -131,7 +131,7 @@ const deleteRepair = async (deleteRepairUserId) => {
 
                   <RouterLink to="/repair" class="block">
                     <button
-                      class="w-full h-32 bg-[#E09F3E] hover:bg-[#d8973a] active:bg-[#c78a35] text-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center p-4 group">
+                      class="cursor-pointer w-full h-32 bg-[#E09F3E] hover:bg-[#d8973a] active:bg-[#c78a35] text-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center p-4 group">
                       <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-10 w-10 mb-2 group-hover:scale-110 transition-transform" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
@@ -144,7 +144,7 @@ const deleteRepair = async (deleteRepairUserId) => {
                 </div>
 
                 <button @click="logout"
-                  class="w-full bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-xl font-medium py-4 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                  class="cursor-pointer w-full bg-red-500 hover:bg-red-600 active:bg-red-700 text-white rounded-xl font-medium py-4 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -168,11 +168,11 @@ const deleteRepair = async (deleteRepairUserId) => {
 
         <div class="mt-4 flex justify-center gap-4">
           <button @click="deleteUser(currentStudentId)"
-            class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+            class="cursor-pointer px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
             ยืนยัน
           </button>
           <button @click="showDeleteUserConfirm = false"
-            class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400">
+            class="cursor-pointer px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400">
             ยกเลิก
           </button>
         </div>
