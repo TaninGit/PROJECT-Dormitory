@@ -91,6 +91,10 @@ const validateEmail = (email) => {
     return emailRegex.test(email);
 }
 
+const validateRoomID = (value) => {
+    return /^[0-9]{4}$/.test(String(value));
+};
+
 const validateStep1 = () => {
     if (isNullOrEmpty(user.value.id)) {
         message.value.idError = 'กรุณากรอกรหัสนักศึกษา';
@@ -115,7 +119,8 @@ const validateStep2 = () => {
     message.value.phoneError = isNullOrEmpty(user.value.phone) ? 'กรุณากรอกเบอร์โทร' : (validatePhone(user.value.phone) ? '' : 'เบอร์โทรต้องเป็นตัวเลข 10 หลัก') 
     message.value.facultyError = isNullOrEmpty(user.value.faculty) ? 'กรุณาเลือกคณะ' : ''
     message.value.majorError = isNullOrEmpty(user.value.major) ? 'กรุณาเลือกสาขา' : ''
-    message.value.roomIDError = isNullOrEmpty(user.value.roomID) ? 'กรุณากรอกเลขห้องพัก' : ''
+    message.value.roomIDError = isNullOrEmpty(user.value.roomID) ? 'กรุณากรอกเลขห้องพัก' : 
+        (validateRoomID(user.value.roomID) ? '' : 'เลขห้องพักต้องเป็นตัวเลข 4 หลัก');
     message.value.roomTypeError = isNullOrEmpty(user.value.roomType) ? 'กรุณาเลือกประเภทห้องพัก' : ''
     return Object.values(message.value).slice(3).every(error => error === '')
 }
