@@ -81,7 +81,7 @@ function costFormat(cost) {
                     </div>
                 </div>
                 <div
-                    class="rounded-3xl p-10 h-245 w-140 bg-[url('./payments/bill2.png')] bg-cover flex flex-col justify-center items-center space-y-5">
+                    class="rounded-3xl p-10 h-245 w-140 bg-[url('/payments/bill2.png')] bg-cover flex flex-col justify-center items-center space-y-5">
                     <div class="flex items-center justify-center">
                         <div
                             class="absolute w-15 h-15 bg-[#ffffff] rounded-full flex items-center justify-center mb-25 shadow-md shadow-gray-400">
