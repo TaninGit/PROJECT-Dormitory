@@ -1,5 +1,5 @@
 <script setup>
-import news from './News.vue';
+import newsComponent from './NewsComponent.vue';
 import { ref, onMounted } from 'vue';
 import { getItems } from '../../libs/fetchUtils.js'
 
@@ -56,7 +56,7 @@ onMounted(async () => {
 
       <div class="w-full md:w-7/16 flex flex-col gap-4 md:pr-10">
         <div v-for="(news, index) in newsList" :key="index" class="rounded-lg  ">
-          <news>
+          <newsComponent>
             <template #image>
               <img :src="`/news/${news.img}`" alt="news" class="w-full md:w-100   rounded-md">
             </template>
@@ -81,7 +81,7 @@ onMounted(async () => {
                 </p>
               </div>
             </template>
-          </news>
+          </newsComponent>
         </div>
       </div>
     </div>
