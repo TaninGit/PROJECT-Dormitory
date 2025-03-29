@@ -4,11 +4,11 @@
 
 | ลำดับ | รหัสนักศึกษา   | ชื่อ-นามสกุล                 | GitHub Username | สัดส่วนเปอร์เซ็นต์การทำงาน |
 |-------|-----------------|---------------------|-----------------|-----------------|
-| 1     | 66130500018     | ชนันธร ศรีวรชัย         |   mook2005      | |
-| 2     | 66130500021     | ชัญญา นิ่มถาวร         |    CNProud       | |
-| 3     | 66130500034     | ทนิน เก้าเอี้ยน          |    TaninGit      | |
-| 4     | 66130500054     | เบญญาพร เมธาวิวรรธน์กุล  |    Benyaporn54   | |
-| 5     | 66130500061     | ปัณณพร อโนทัยสินทวี     |    Butt3rPann    | |
+| 1     | 66130500018     | ชนันธร ศรีวรชัย         |   mook2005      | 20% |
+| 2     | 66130500021     | ชัญญา นิ่มถาวร         |    CNProud       | 20% |
+| 3     | 66130500034     | ทนิน เก้าเอี้ยน          |    TaninGit      | 20% |
+| 4     | 66130500054     | เบญญาพร เมธาวิวรรธน์กุล  |    Benyaporn54   | 20% |
+| 5     | 66130500061     | ปัณณพร อโนทัยสินทวี     |    Butt3rPann    | 20% |
 
 -------------
 
@@ -16,26 +16,26 @@
 
 | ลำดับ | รหัสนักศึกษา   |      สัปดาห์ที่ 1     |     สัปดาห์ที่ 2   |    สัปดาห์ที่ 3    |    สัปดาห์ที่ 4    |    สัปดาห์ที่ 5    |
 |------|--------------|-----------------|-----------------|-----------------|-----------------|-----------------|
-| 1     | 66130500018     |    Figma Design  | Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue | RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), update Dropdown.vue (watch) | central index.js, localStorage currentUser handling, Rule.vue, integrate all components with index.js and localStorage (useRouter), update main.js, Navbar.vue (computed, goToProfileOrLogin function), RoomType.vue (defineProps), Profile.vue (logout function) |
-| 2     | 66130500021     |    Design System, Figma Design  | Component Structure , Banner.vue, Reason.vue | Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function) | SignUp.vue(onMounted, isNullOrEmpty, validateStudentId, validateConfirmPasswd, validatePhone, validateEmail, validateStep1, validateStep2,  validateSubmit, nextStep, finish, addUser), update Dropdown.vue |
-| 3     | 66130500034     |    Figma Design  | Component Structure , Slider.vue (next, prev, imageSlider function)| RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), update Slider.vue | Payment.vue (onMounted, costFormat function) |
-| 4     | 66130500054     |    Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue | Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), update Announcement.vue (onMounted) | RoomDetail.vue (onMounted) |
-| 5     | 66130500061     |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue | Login.vue (login, hashPassword, validateInput function), update Review.vue (onMounted, prevReview, nextReview, selectReview function) | RegistrationSuccess.vue, SignUp.vue (onMounted, watchEffect), update Review.vue
+| 1     | 66130500018     |    Figma Design  | Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue | RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), update Dropdown.vue (watch) | central index.js, localStorage currentUser handling, Rule.vue, integrate all components with index.js and localStorage (useRouter), update main.js, Navbar.vue (computed, goToProfileOrLogin function), RoomType.vue (defineProps), Profile.vue (logout function) | update Profile.vue (deleteUser, deleteRepair function), Payment.vue,  RepairForm.vue, SignUp.vue (validateRoomID function) |
+| 2     | 66130500021     |    Design System, Figma Design  | Component Structure , Banner.vue, Reason.vue | Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function) | SignUp.vue (onMounted, isNullOrEmpty, validateStudentId, validateConfirmPasswd, validatePhone, validateEmail, validateStep1, validateStep2,  validateSubmit, nextStep, finish, addUser), update Dropdown.vue | update Component Structure, Payment.vue, Profile.vue |
+| 3     | 66130500034     |    Figma Design  | Component Structure , Slider.vue (next, prev, imageSlider function)| RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), update Slider.vue | Payment.vue (onMounted, costFormat function) | AboutUs.vue, update RepairList.vue (sortedReports function), RepairForm.vue, SignUp.vue (validateStudentIdExist, addRepair function) |
+| 4     | 66130500054     |    Figma Design  | Component Structure , Announcement.vue, News.vue, Footer.vue | Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), update Announcement.vue (onMounted) | RoomDetail.vue (onMounted) | NewList.vue (onMounted), update News.vue, Announcement.vue, RepairForm.vue (edit layouts), Input.vue (watch), Payment.vue, Profile.vue |
+| 5     | 66130500061     |    Figma Design  | Component Structure , Review.vue, ReviewCard.vue | Login.vue (login, hashPassword, validateInput function), update Review.vue (onMounted, prevReview, nextReview, selectReview function) | RegistrationSuccess.vue, SignUp.vue (onMounted, watchEffect), update Review.vue, Input.vue (watch) | ContactUs.vue, ContactBox.vue, update Login.vue |
 
 --------------
 
 
 # การแบ่งงาน
 
-✅ **018** - Figma Design, Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue, RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), Rule.vue, central index.js, localStorage currentUser handling, integrate all components with index.js and localStorage (useRouter), update Profile.vue (logout, deleteUser function)
+✅ **018** - Figma Design, Component Structure , Navbar.vue (setUnderline, resetUnderline, openDropdown, closeDropdown function), Room.vue, Roomtype.vue, RepairForm.vue (onMounted, validateSubmit, submitAction function), AddRepairForm.vue (onMounted, addNewRepair, handleNewRepair function), Rule.vue, central index.js, localStorage currentUser handling, integrate all components with index.js and localStorage (useRouter), update Profile.vue (logout, deleteUser, deleteRepair function), update SignUp.vue (validateRoomID function)
 
-✅ **021** - Design System , Figma Design, Component Structure , Banner.vue, Reason.vue, Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function), SignUp.vue(onMounted, isNullOrEmpty, validateStudentId, validateConfirmPasswd, validatePhone, validateEmail, validateStep1, validateStep2,  validateSubmit, nextStep, finish, addUser)
+✅ **021** - Design System , Figma Design, Component Structure , Banner.vue, Reason.vue, Dropdown.vue (toggleDropdown, selectItem function), Input.vue, Button.vue, RepairList.vue (deleteReport, confirmDelete function), SignUp.vue (onMounted, isNullOrEmpty, validateStudentId, validateConfirmPasswd, validatePhone, validateEmail, validateStep1, validateStep2,  validateSubmit, nextStep, finish, addUser), update Component Structure
 
-✅ **034** - Figma Design, Component Structure , Slider.vue (next, prev, imageSlider function), RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), Reserve.vue, Payment.vue (onMounted, costFormat function)
+✅ **034** - Figma Design, Component Structure , Slider.vue (next, prev, imageSlider function), RepairList.vue (onMounted, getStatusColor, getProgressIcon, toggleDetails, handleEdit function), Slider.vue (onMounted), Reserve.vue, Payment.vue (onMounted, costFormat function), AboutUs.vue, update RepairList.vue (sortedReports function), SignUp.vue (validateStudentIdExist, addRepair function)
 
-✅ **054** - Figma Design, Component Structure , Announcement.vue, News.vue, Footer.vue, Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), RoomDetail.vue (onMounted)
+✅ **054** - Figma Design, Component Structure , Announcement.vue, News.vue, Footer.vue, Profile.vue (onMounted), UpdateRepairForm.vue (onMounted, updateRepair, handleRepairEdit function), RoomDetail.vue (onMounted), NewList.vue (onMounted), update Input.vue (watch)
 
-✅ **061** - Figma Design, Component Structure , Review.vue (onMounted, prevReview, nextReview, selectReview function), ReviewCard.vue, Login.vue (login, hashPassword, validateInput function), RegistrationSuccess.vue, SignUp.vue (onMounted, watchEffect)
+✅ **061** - Figma Design, Component Structure , Review.vue (onMounted, prevReview, nextReview, selectReview function), ReviewCard.vue, Login.vue (login, hashPassword, validateInput function), RegistrationSuccess.vue, SignUp.vue (onMounted, watchEffect), Input.vue (watch), ContactUs.vue, ContactBox.vue
 
 --------------
 
@@ -99,19 +99,112 @@
 ---
 
 # Component Structure
-![image](https://github.com/user-attachments/assets/9b9f1187-0fe3-4942-b7b9-5e0dad0bb785)
-![image](https://github.com/user-attachments/assets/b15f5f6d-c617-485b-95de-50b8458f739b)
-![image](https://github.com/user-attachments/assets/a8e43c64-4cf8-4c12-90ad-a9b7849f1b43)
+![image](https://github.com/user-attachments/assets/63639f27-7964-40e9-8f50-cd9e019269d1)
+![image3](https://github.com/user-attachments/assets/7100365f-a04d-49d8-87bf-8db4b66d3e4b)
+![image1](https://github.com/user-attachments/assets/0e952c38-4dd3-4412-ab09-c54a956cc453)
+![image2](https://github.com/user-attachments/assets/c7b7f976-32f8-451f-abd4-0ca532cf2b01)
+
 
 ---
 
 # คู่มือการใช้งานแอปพลิเคชัน
-📝
+## 📖 คู่มือการใช้งานระบบหอพักมหาวิทยาลัย
+
+ระบบหอพักนักศึกษาเป็นระบบที่ช่วยให้นักศึกษาที่พักในหอสามารถจัดการข้อมูลส่วนตัว 💼 ชำระบิล 💰 แจ้งซ่อม 🛠️ และจัดการบัญชีได้อย่างสะดวก รวดเร็ว และปลอดภัย โดยคู่มือนี้จะอธิบายขั้นตอนการใช้งานระบบในแต่ละส่วน ดังนี้
+
+---
+
+## 1. 🔑 การเข้าสู่ระบบ (Login) และสมัครสมาชิก (Sign Up)
+
+### 🔓 เข้าสู่ระบบ (Login)
+1. กดที่ไอคอน **โปรไฟล์** 👤 บริเวณมุมขวาบนของหน้าจอ
+2. กรอกข้อมูลดังนี้:
+   - 📌 **รหัสนักศึกษา**
+   - 🔑 **รหัสผ่าน**
+3. คลิกที่ปุ่ม **"เข้าสู่ระบบ"** ✅
+4. หากยังไม่มีบัญชี กดที่ข้อความ **"สมัครใช้งาน"** ➡️ เพื่อไปที่หน้าสมัครสมาชิก
+
+### 📝 สมัครสมาชิก (Sign Up)
+1. กรอกข้อมูลดังนี้:
+   - 📌 **รหัสนักศึกษา**
+   - 🔑 **รหัสผ่าน + ยืนยันรหัสผ่าน**
+   - 🏷️ **ชื่อจริง**
+   - 🏷️ **นามสกุล**
+   - 🚻 **เพศ**
+   - 📧 **อีเมล**
+   - 📞 **เบอร์โทรศัพท์**
+   - 🎓 **คณะ**
+   - 📚 **สาขา**
+   - 🏠 **เลขห้องพัก**
+   - 🏡 **ประเภทห้องพัก**
+2. คลิกที่ปุ่ม **"เสร็จสิ้น"** 🎉
+3. ระบบจะแสดงข้อความยืนยันการลงทะเบียน เมื่อคุณกดปุ่ม **"ตกลง"** ✅ ระบบจะนำคุณกลับไปที่หน้าเข้าสู่ระบบ
+
+---
+
+## 2. 👤 หน้าโปรไฟล์ (Profile)
+
+หลังจากเข้าสู่ระบบสำเร็จ ระบบจะแสดงหน้า **โปรไฟล์** ซึ่งมีรายละเอียดและบริการต่าง ๆ ดังนี้:
+
+### 📌 ข้อมูลผู้ใช้
+- 🏷️ **ชื่อ-นามสกุล**
+- 📧 **อีเมล**
+- 📞 **เบอร์โทรศัพท์**
+
+### ⚙️ Service
+ในหน้าโปรไฟล์จะมีบริการหลักให้เลือก 2 อย่าง คือ:
+- 💳 **จ่ายบิลหอพัก**
+- 🛠️ **แจ้งซ่อม**
+
+### ❌ ลบบัญชี (Delete Account)
+1. กดปุ่ม **"Delete Account"** ❌ (สีแดง)
+2. ระบบจะแจ้งเตือนให้ยืนยันการลบ ⚠️
+3. หากยืนยัน ระบบจะลบข้อมูลทั้งหมดถาวร รวมถึงข้อมูลการชำระเงินและประวัติการแจ้งซ่อม 🗑️
+
+### 🔐 ออกจากระบบ (Log Out)
+1. กดปุ่ม **"Log Out"** 🚪 (สีแดง) เพื่อออกจากระบบ
+2. ระบบจะนำคุณกลับไปที่หน้า **Login** 🔄
+
+---
+
+## 3. 💳 บริการจ่ายบิลหอพัก
+
+เมื่อเลือกบริการ **จ่ายบิลหอพัก** ระบบจะแสดงข้อมูลที่เกี่ยวข้องกับการชำระค่าบิลของคุณ:
+- 📌 **ข้อมูลส่วนตัว**
+- 🧾 **ใบเรียกเก็บเงิน** (ชำระค่าห้องพัก-ค่าสาธารณูปโภคภายในหอพัก)
+
+---
+
+## 4. 🛠️ บริการแจ้งซ่อมออนไลน์
+
+### 📝 รายการการแจ้งซ่อม
+1. เมื่อเข้าสู่หน้าการแจ้งซ่อม คุณจะเห็นรายการการแจ้งซ่อมทั้งหมดที่ได้ทำรายการไว้ โดยจะแสดงรายละเอียดดังนี้:
+   - ⏰ **เวลา**
+   - 🔄 **สถานะ** (⏳ รอดำเนินการ, 🏗️ กำลังดำเนินงาน, ✅ ดำเนินการเรียบร้อย)
+   - 🛠️ **รายละเอียดการซ่อมแซม**
+   - 🔧 **ประเภทงานซ่อม** (⚡ งานไฟฟ้า, 🚰 งานประปา, 🏠 อื่นๆ)
+2. หากคลิกที่รายการใดรายการหนึ่ง ระบบจะแสดงรายละเอียดเพิ่มเติมของการแจ้งซ่อมนั้นๆ 
+
+### ✏️ การแก้ไขหรือลบการแจ้งซ่อม (เมื่อสถานะเป็น "รอดำเนินการ")
+หากสถานะการแจ้งซ่อมเป็น **"รอดำเนินการ"** ⏳ คุณสามารถทำการ **แก้ไข** หรือ **ลบ** การแจ้งซ่อมนั้นได้:
+- ✏️ กดที่ปุ่ม **"แก้ไข"** หากต้องการแก้ไขรายละเอียด
+- 🗑️ กดที่ปุ่ม **"ลบ"** หากต้องการยกเลิกการแจ้งซ่อม
+
+### 📝 กรอกฟอร์มแจ้งซ่อม
+1. คลิกที่ปุ่ม **"กรอกฟอร์มแจ้งซ่อม"** 📝 เพื่อเริ่มการแจ้งซ่อมใหม่
+2. กรอกรายละเอียดการแจ้งซ่อมให้ครบถ้วน:
+   - 🔧 **ประเภทงาน**
+   - 🛠️ **รายละเอียดการชำรุดเสียหาย**
+   - 📅 **วันนัดหมาย**
+   - ⏰ **เวลานัดหมาย**
+3. เมื่อกรอกข้อมูลเสร็จแล้ว คลิกที่ปุ่ม **"เสร็จสิ้น"** ✅ ระบบจะบันทึกการแจ้งซ่อมและกลับไปที่หน้า **รายการการแจ้งซ่อมทั้งหมด** 📜
+
+
 
 ---
 
 # คลิปสาธิต features ของแอปพลิเคชัน
-🎥
+🎥 https://drive.google.com/file/d/1655l8M7gFblHXNPupWMzK-L3vtj6OdTq/view
 
 ---
 
