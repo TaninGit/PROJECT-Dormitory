@@ -100,7 +100,7 @@
 
 # Component Structure
 ![image](https://github.com/user-attachments/assets/63639f27-7964-40e9-8f50-cd9e019269d1)
-![image3](https://github.com/user-attachments/assets/7100365f-a04d-49d8-87bf-8db4b66d3e4b)
+![Screenshot 2025-04-07 190816](https://github.com/user-attachments/assets/f09bfea7-8c53-4d87-81bb-8fb32db57f25)
 ![image1](https://github.com/user-attachments/assets/0e952c38-4dd3-4412-ab09-c54a956cc453)
 ![image2](https://github.com/user-attachments/assets/c7b7f976-32f8-451f-abd4-0ca532cf2b01)
 
