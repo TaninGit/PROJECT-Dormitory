@@ -111,20 +111,20 @@ const deleteReport = async (id, repairId) => {
   <div class="font-noto-sans-thai">
     <div class="bg-[url('../assets/background/dormBackground.png')] w-screen h-screen flex item-center justify-center">
       <div class="pt-25 flex flex-col item-center justify-center items-center">
-        <div class="w-350 h-25 flex gap-5">
+        <div class="w-350 h-25 flex gap-5 justify-around">
           <RouterLink to="/profile">
-            <button type="button" class="flex items-center justify-center cursor-pointer">
+            <button type="button" class="flex items-center justify-center cursor-pointer -ml-6">
               <img src="../../assets/icon/arrow-back.png" alt="back-arrow" class="absolute w-14" />
               <img src="../../assets/icon/button-back.png" alt="back-button" class="w-22" />
             </button>
           </RouterLink>
           <h1
-            class="bg-[#ffffff] border-3 border-[#E09F3E] text-[#1E555C] rounded-3xl mt-2 mb-2 px-15 text-4xl text-center flex items-center justify-center font-noto-sans-thai font-bold">
+            class="bg-[#ffffff] border-3 border-[#E09F3E] text-[#1E555C] rounded-3xl mt-2 mb-2 px-15 text-4xl text-center flex items-center justify-center font-noto-sans-thai font-bold -ml-64">
             บริการแจ้งซ่อมออนไลน์
           </h1>
           <RouterLink to="/add-repair">
             <button
-              class="bg-[#404546] hover:bg-[#313637] text-white h-18 w-65 font-light mt-4 mb-4 px-10 rounded-xl font-noto-sans-thai ml-108 cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+              class="bg-[#404546] hover:bg-[#313637] text-white h-18 w-65 font-light mt-4 mb-4 px-10 rounded-xl font-noto-sans-thai cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
               <img src="../../assets/icon/externalLinkIcon.png" alt="externalLinkIcon" class="inline w-5 h-5 mr-1" />
               <span>กรอกฟอร์มแจ้งซ่อมแซม</span>
             </button>

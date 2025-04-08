@@ -60,14 +60,18 @@ const validateSubmit = () => {
   today.setHours(0, 0, 0, 0);
   const selectedDate = newRepair.value.appointmentDate ? new Date(newRepair.value.appointmentDate) : null;
 
+  if (selectedDate) {
+    selectedDate.setHours(0, 0, 0, 0);
+  }
+
   newRepair.value.repairTypeError = newRepair.value.repairType ? '' : 'กรุณาเลือกประเภทงาน';
   newRepair.value.titleError = newRepair.value.title.trim() ? '' : 'กรุณากรอกรายละเอียด';
   newRepair.value.appointmentDateError = selectedDate
-    ? (selectedDate >= today ? '' : 'กรุณาเลือกวันที่ปัจจุบันหรืออนาคต')
+    ? (selectedDate > today ? '' : 'กรุณาเลือกวันที่ในอนาคต')
     : 'กรุณากรอกวันนัดหมาย';
   newRepair.value.appointmentTimeError = newRepair.value.appointmentTime ? '' : 'กรุณาเลือกเวลานัดหมาย';
 
-  const isValid = newRepair.value.repairType && newRepair.value.title.trim() && selectedDate && selectedDate >= today && newRepair.value.appointmentTime;
+  const isValid = newRepair.value.repairType && newRepair.value.title.trim() && selectedDate && selectedDate > today && newRepair.value.appointmentTime;
 
   if (!isValid) {
     return;
