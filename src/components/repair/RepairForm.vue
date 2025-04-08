@@ -29,8 +29,6 @@ onMounted(async () => {
   }
 });
 
-const emits = defineEmits(["addNewRepair"]);
-
 const newRepair = ref({
   studentId: currentStudentId,
   repairType: props.repairData?.repairType || '',
@@ -78,7 +76,6 @@ const validateSubmit = () => {
   }
 
   props.submitAction(newRepair.value);
-  router.push('/repair');
 };
 
 

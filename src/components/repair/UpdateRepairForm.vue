@@ -3,7 +3,9 @@ import RepairForm from './RepairForm.vue';
 import { getItems } from "../../libs/fetchUtils.js";
 import { editItem } from "../../libs/fetchUtils.js";
 import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
+
+const router = useRouter();
 
 const currentStudentId = localStorage.getItem('currentUser');
 const route = useRoute();
@@ -54,8 +56,9 @@ const updateRepair = async (updatedRepair) => {
 };
 
 
-const handleRepairEdit = (updatedRepair) => {
-  updateRepair(updatedRepair);
+const handleRepairEdit = async (updatedRepair) => {
+  await updateRepair(updatedRepair);
+  router.push('/repair');
 };
 </script>
 
