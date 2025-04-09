@@ -4,9 +4,6 @@ import Button from '../form/Button.vue';
 import Input from '../form/Input.vue';
 import Dropdown from '../form/Dropdown.vue';
 import { getItems } from "../../libs/fetchUtils.js";
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
 
 const props = defineProps({
   submitAction: Function,
@@ -65,7 +62,7 @@ const validateSubmit = () => {
   newRepair.value.repairTypeError = newRepair.value.repairType ? '' : 'กรุณาเลือกประเภทงาน';
   newRepair.value.titleError = newRepair.value.title.trim() ? '' : 'กรุณากรอกรายละเอียด';
   newRepair.value.appointmentDateError = selectedDate
-    ? (selectedDate > today ? '' : 'กรุณาเลือกวันที่ในอนาคต')
+    ? (selectedDate > today ? '' : 'กรุณาเลือกวันที่ตั้งแต่วันพรุ่งนี้เป็นต้นไป')
     : 'กรุณากรอกวันนัดหมาย';
   newRepair.value.appointmentTimeError = newRepair.value.appointmentTime ? '' : 'กรุณาเลือกเวลานัดหมาย';
 

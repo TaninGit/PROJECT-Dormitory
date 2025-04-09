@@ -49,7 +49,6 @@ const updateRepair = async (updatedRepair) => {
       studentRepairs.value.id,
       { ...studentRepairs.value, reports: updatedReports }
     );
-    console.log("แก้ไขรายการซ่อมสำเร็จ:", editedItem);
   } catch (error) {
     console.error("ไม่สามารถแก้ไขข้อมูลได้:", error);
   }

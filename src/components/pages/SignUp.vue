@@ -156,7 +156,7 @@ const addRepair = async () => {
         id: user.value.id.trim(),
         reports: []
     }
-        const newRepair = await addItem(`${import.meta.env.VITE_APP_URL}/repairs`, newRepairData)
+        await addItem(`${import.meta.env.VITE_APP_URL}/repairs`, newRepairData)
     }
     catch(error) {
         console.error(error);

@@ -15,8 +15,6 @@ onMounted(async () => {
 
         if (!room.value) {
             console.error("Room not found:", roomId)
-        } else {
-            console.log("Loaded Room:", room.value)
         }
     }
     catch (error) {
