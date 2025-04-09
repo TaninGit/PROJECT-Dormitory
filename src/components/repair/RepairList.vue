@@ -20,7 +20,6 @@ onMounted(async () => {
     if (user) {
       repairInfo.value = user;
     }
-    console.log(repairInfo.value);
   } catch (error) {
     console.log(error);
   }
