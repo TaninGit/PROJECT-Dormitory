@@ -100,9 +100,9 @@
 
 # Component Structure
 ![image](https://github.com/user-attachments/assets/63639f27-7964-40e9-8f50-cd9e019269d1)
-![Screenshot 2025-04-07 190816](https://github.com/user-attachments/assets/f09bfea7-8c53-4d87-81bb-8fb32db57f25)
-![image1](https://github.com/user-attachments/assets/0e952c38-4dd3-4412-ab09-c54a956cc453)
-![image2](https://github.com/user-attachments/assets/c7b7f976-32f8-451f-abd4-0ca532cf2b01)
+![Screenshot 2025-04-09 105946](https://github.com/user-attachments/assets/7194e35e-7ed4-4d1e-82e5-bb8e6a3e65e6)
+![Screenshot 2025-04-09 105958](https://github.com/user-attachments/assets/90f62d39-5fcc-4eb3-b7c6-a35012115149)
+![Screenshot 2025-04-09 110011](https://github.com/user-attachments/assets/27856cde-a893-42e9-86f7-b3f2b72a7b0c)
 
 
 ---
