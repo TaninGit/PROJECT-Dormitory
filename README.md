@@ -219,7 +219,7 @@
 🎥 https://drive.google.com/file/d/1655l8M7gFblHXNPupWMzK-L3vtj6OdTq/view
 
 # Web Demo
-**[Web demo](https://project-dormitory.onrender.com/homepage)**
+**[Web demo](https://project-dormitory.onrender.com)**
 
 ---
 
